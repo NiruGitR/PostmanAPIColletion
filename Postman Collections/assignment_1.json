@@ -568,6 +568,20 @@
 					"item": [
 						{
 							"name": "Finds Pets by status",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "c03bbfd4-ea96-49e0-864e-2217a120b020",
+										"exec": [
+											"const schema = {\r",
+											"    \"type\" : \"object\"\r",
+											"};"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"id": "6092c330-232c-4073-a694-8060079c144a",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -2239,7 +2253,7 @@
 	],
 	"variable": [
 		{
-			"id": "7df8760f-8aa5-46bd-8e11-c07306b9fe57",
+			"id": "c0bddf41-2530-47ba-b2f0-98afde39c258",
 			"key": "baseUrl",
 			"value": "https://petstore.swagger.io/v2"
 		}
