@@ -574,9 +574,18 @@
 									"script": {
 										"id": "c03bbfd4-ea96-49e0-864e-2217a120b020",
 										"exec": [
+											"const schema = {\r",
+											"    \"type\": \"object\",\r",
+											"    \"properties\": {\r",
+											"        \"name\": {\"type\": \"string\"}\r",
+											"    },\r",
+											"};\r",
+											"\r",
 											"pm.test(\"Status code is 200\", function () {\r",
 											"    pm.response.to.have.status(200);\r",
-											"});"
+											"});\r",
+											"\r",
+											""
 										],
 										"type": "text/javascript"
 									}
@@ -2253,7 +2262,7 @@
 	],
 	"variable": [
 		{
-			"id": "cd6eb363-3dd5-4eda-ad96-6dfa8e03c463",
+			"id": "77124273-3eb5-4e0a-ab49-fec17d1bdf13",
 			"key": "baseUrl",
 			"value": "https://petstore.swagger.io/v2"
 		}
