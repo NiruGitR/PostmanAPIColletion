@@ -576,7 +576,10 @@
 										"exec": [
 											"const schema = {\r",
 											"    \"type\" : \"object\"\r",
-											"};"
+											"};\r",
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});"
 										],
 										"type": "text/javascript"
 									}
@@ -2253,7 +2256,7 @@
 	],
 	"variable": [
 		{
-			"id": "c0bddf41-2530-47ba-b2f0-98afde39c258",
+			"id": "ba716378-042e-4845-8656-04c58bc53a85",
 			"key": "baseUrl",
 			"value": "https://petstore.swagger.io/v2"
 		}
