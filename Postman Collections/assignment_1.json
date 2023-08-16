@@ -597,7 +597,7 @@
 											"                \"name\": {\"type\": \"string\"}\r",
 											"            }\r",
 											"        },\r",
-											"       \"status\": {\"type\": \"number\"} \r",
+											"       \"status\": {\"type\": \"string\"} \r",
 											"    },\r",
 											"};\r",
 											"\r",
@@ -2285,7 +2285,7 @@
 	],
 	"variable": [
 		{
-			"id": "f4678d31-84c1-417c-b25a-af353dda534a",
+			"id": "396b75d3-0ac9-4f82-9446-f425f5d4a0b8",
 			"key": "baseUrl",
 			"value": "https://petstore.swagger.io/v2"
 		}
