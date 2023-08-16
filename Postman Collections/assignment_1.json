@@ -152,6 +152,20 @@
 						},
 						{
 							"name": "Find pet by ID",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "447e8f36-fa7c-4264-b14f-588ebcdb0703",
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"id": "b2da7335-1b19-4691-b9b8-540c6cd71e2d",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -2225,7 +2239,7 @@
 	],
 	"variable": [
 		{
-			"id": "762b9410-9009-46b3-8ba5-c6fdd0bcf70b",
+			"id": "14801165-4116-41dd-8fee-d40db6f42d2f",
 			"key": "baseUrl",
 			"value": "https://petstore.swagger.io/v2"
 		}
