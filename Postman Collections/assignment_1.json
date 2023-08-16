@@ -152,6 +152,20 @@
 						},
 						{
 							"name": "Find pet by ID",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "447e8f36-fa7c-4264-b14f-588ebcdb0703",
+										"exec": [
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});"
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"id": "b2da7335-1b19-4691-b9b8-540c6cd71e2d",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -184,7 +198,7 @@
 									"variable": [
 										{
 											"key": "petId",
-											"value": "2"
+											"value": "9223372036854762186"
 										}
 									]
 								},
@@ -575,7 +589,7 @@
 									}
 								],
 								"url": {
-									"raw": "{{baseUrl}}/pet/findByStatus?status=pending&status=pending",
+									"raw": "{{baseUrl}}/pet/findByStatus?status=available&status=available",
 									"host": [
 										"{{baseUrl}}"
 									],
@@ -586,12 +600,12 @@
 									"query": [
 										{
 											"key": "status",
-											"value": "pending",
+											"value": "available",
 											"description": "(Required) Status values that need to be considered for filter"
 										},
 										{
 											"key": "status",
-											"value": "pending",
+											"value": "available",
 											"description": "(Required) Status values that need to be considered for filter"
 										}
 									]
@@ -2225,7 +2239,7 @@
 	],
 	"variable": [
 		{
-			"id": "762b9410-9009-46b3-8ba5-c6fdd0bcf70b",
+			"id": "7df8760f-8aa5-46bd-8e11-c07306b9fe57",
 			"key": "baseUrl",
 			"value": "https://petstore.swagger.io/v2"
 		}
