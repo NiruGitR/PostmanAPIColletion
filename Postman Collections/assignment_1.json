@@ -184,7 +184,7 @@
 									"variable": [
 										{
 											"key": "petId",
-											"value": "9223372036854759933"
+											"value": "2"
 										}
 									]
 								},
@@ -2225,7 +2225,7 @@
 	],
 	"variable": [
 		{
-			"id": "254641a4-bbb6-4ecc-9b92-facf64ba83b8",
+			"id": "762b9410-9009-46b3-8ba5-c6fdd0bcf70b",
 			"key": "baseUrl",
 			"value": "https://petstore.swagger.io/v2"
 		}
