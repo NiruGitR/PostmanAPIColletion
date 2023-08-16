@@ -568,6 +568,54 @@
 					"item": [
 						{
 							"name": "Finds Pets by status",
+							"event": [
+								{
+									"listen": "test",
+									"script": {
+										"id": "c03bbfd4-ea96-49e0-864e-2217a120b020",
+										"exec": [
+											"const schema = {\r",
+											"    \"type\": \"array\",\r",
+											"    \"properties\": {\r",
+											"        \"id\": {\"type\": \"number\"},\r",
+											"        \"category\":{\r",
+											"            \"type\": \"object\",\r",
+											"            \"properties\":{\r",
+											"                \"id\": {\"type\": \"number\"},\r",
+											"                \"name\": {\"type\": \"string\"}\r",
+											"            }\r",
+											"        },\r",
+											"        \"name\": {\"type\": \"string\"},\r",
+											"        \"photoUrls\":{\r",
+											"            \"type\": \"array\",\r",
+											"            \"items\": {\"type\": \"string\"}\r",
+											"        },\r",
+											"        \"tags\":{\r",
+											"            \"type\": \"array\",\r",
+											"            \"items\": {\r",
+											"                \"type\": \"object\",\r",
+											"                \"id\": {\"type\": \"number\"},\r",
+											"                \"name\": {\"type\": \"string\"}\r",
+											"            }\r",
+											"        },\r",
+											"       \"status\": {\"type\": \"string\"} \r",
+											"    },\r",
+											"    \"required\": [\"id\", \"category\", \"name\", \"photoUrls\", \"tags\", \"status\"]\r",
+											"};\r",
+											"\r",
+											"pm.test(\"Status code is 200\", function () {\r",
+											"    pm.response.to.have.status(200);\r",
+											"});\r",
+											"\r",
+											"pm.test(\"Validate schema\", () => {\r",
+											"    pm.response.to.have.jsonSchema(schema);\r",
+											"});\r",
+											""
+										],
+										"type": "text/javascript"
+									}
+								}
+							],
 							"id": "6092c330-232c-4073-a694-8060079c144a",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
@@ -2239,7 +2287,7 @@
 	],
 	"variable": [
 		{
-			"id": "7df8760f-8aa5-46bd-8e11-c07306b9fe57",
+			"id": "6c43f3d4-50eb-462c-a925-ec94491ad091",
 			"key": "baseUrl",
 			"value": "https://petstore.swagger.io/v2"
 		}
