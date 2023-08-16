@@ -585,6 +585,9 @@
 											"    pm.response.to.have.status(200);\r",
 											"});\r",
 											"\r",
+											"pm.test(\"Validate schema\", () => {\r",
+											"    pm.response.to.have.jsonSchema(schema);\r",
+											"});\r",
 											""
 										],
 										"type": "text/javascript"
@@ -2262,7 +2265,7 @@
 	],
 	"variable": [
 		{
-			"id": "77124273-3eb5-4e0a-ab49-fec17d1bdf13",
+			"id": "84fd4887-2e45-48af-b088-c4d62ef0a96e",
 			"key": "baseUrl",
 			"value": "https://petstore.swagger.io/v2"
 		}
