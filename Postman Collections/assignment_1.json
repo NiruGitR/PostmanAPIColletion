@@ -593,9 +593,11 @@
 											"        \"tags\":{\r",
 											"            \"type\": \"array\",\r",
 											"            \"items\": {\r",
-											"                \"id\": {\"type\": \"string\"}\r",
+											"                \"id\": {\"type\": \"number\"},\r",
+											"                \"name\": {\"type\": \"string\"}\r",
 											"            }\r",
 											"        },\r",
+											"       \"status\": {\"type\": \"number\"} \r",
 											"    },\r",
 											"};\r",
 											"\r",
@@ -2283,7 +2285,7 @@
 	],
 	"variable": [
 		{
-			"id": "e2614e2e-7e28-410c-bbb2-9812a402375b",
+			"id": "f4678d31-84c1-417c-b25a-af353dda534a",
 			"key": "baseUrl",
 			"value": "https://petstore.swagger.io/v2"
 		}
