@@ -159,7 +159,7 @@
 										"id": "447e8f36-fa7c-4264-b14f-588ebcdb0703",
 										"exec": [
 											"pm.test(\"Status code is 200\", function () {\r",
-											"    pm.response.to.have.status(200);\r",
+											"    pm.response.to.have.status(201);\r",
 											"});"
 										],
 										"type": "text/javascript"
@@ -2239,7 +2239,7 @@
 	],
 	"variable": [
 		{
-			"id": "14801165-4116-41dd-8fee-d40db6f42d2f",
+			"id": "3b4be820-70f3-450a-8ed3-ad8d07a2cb56",
 			"key": "baseUrl",
 			"value": "https://petstore.swagger.io/v2"
 		}
