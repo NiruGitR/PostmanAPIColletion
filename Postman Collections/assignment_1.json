@@ -17,7 +17,7 @@
 							"item": [
 								{
 									"name": "uploads an image",
-									"_postman_id": "203b9c55-01ba-4424-9724-92a3fb37d51c",
+									"id": "203b9c55-01ba-4424-9724-92a3fb37d51c",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -56,8 +56,7 @@
 													"value": "<string>",
 													"type": "text"
 												}
-											],
-											"options": {}
+											]
 										},
 										"url": {
 											"raw": "{{baseUrl}}/pet/:petId/uploadImage",
@@ -73,8 +72,7 @@
 												{
 													"id": "3c999f8d-ac4b-4fc1-8602-9e550ad67802",
 													"key": "petId",
-													"value": "<long>",
-													"type": "string"
+													"value": "<long>"
 												}
 											]
 										}
@@ -150,12 +148,11 @@
 									]
 								}
 							],
-							"_postman_id": "a576912c-8503-4b33-be43-da95d9fbae27",
-							"_postman_isSubFolder": true
+							"id": "a576912c-8503-4b33-be43-da95d9fbae27"
 						},
 						{
 							"name": "Find pet by ID",
-							"_postman_id": "b2da7335-1b19-4691-b9b8-540c6cd71e2d",
+							"id": "b2da7335-1b19-4691-b9b8-540c6cd71e2d",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -186,10 +183,8 @@
 									],
 									"variable": [
 										{
-											"id": "b56e4927-c9d0-4db8-b440-d0907ca5f131",
 											"key": "petId",
-											"value": "<long>",
-											"type": "string"
+											"value": "9223372036854759930"
 										}
 									]
 								},
@@ -242,42 +237,6 @@
 									"body": "{\n  \"name\": \"<string>\",\n  \"photoUrls\": [\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"id\": \"<long>\",\n  \"category\": {\n    \"id\": \"<long>\",\n    \"name\": \"<string>\"\n  },\n  \"tags\": [\n    {\n      \"id\": \"<long>\",\n      \"name\": \"<string>\"\n    },\n    {\n      \"id\": \"<long>\",\n      \"name\": \"<string>\"\n    }\n  ],\n  \"status\": \"available\"\n}"
 								},
 								{
-									"id": "a7c4405d-c294-4d42-8073-66a54983ad6b",
-									"name": "Pet not found",
-									"originalRequest": {
-										"method": "GET",
-										"header": [
-											{
-												"description": "Added as a part of security scheme: apikey",
-												"key": "api_key",
-												"value": "<API Key>"
-											}
-										],
-										"url": {
-											"raw": "{{baseUrl}}/pet/:petId",
-											"host": [
-												"{{baseUrl}}"
-											],
-											"path": [
-												"pet",
-												":petId"
-											],
-											"variable": [
-												{
-													"key": "petId"
-												}
-											]
-										}
-									},
-									"status": "Not Found",
-									"code": 404,
-									"_postman_previewlanguage": "text",
-									"header": [],
-									"cookie": [],
-									"responseTime": null,
-									"body": ""
-								},
-								{
 									"id": "f74c7477-a506-435b-b137-1031e75bc677",
 									"name": "Invalid ID supplied",
 									"originalRequest": {
@@ -312,12 +271,48 @@
 									"cookie": [],
 									"responseTime": null,
 									"body": ""
+								},
+								{
+									"id": "a7c4405d-c294-4d42-8073-66a54983ad6b",
+									"name": "Pet not found",
+									"originalRequest": {
+										"method": "GET",
+										"header": [
+											{
+												"description": "Added as a part of security scheme: apikey",
+												"key": "api_key",
+												"value": "<API Key>"
+											}
+										],
+										"url": {
+											"raw": "{{baseUrl}}/pet/:petId",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"pet",
+												":petId"
+											],
+											"variable": [
+												{
+													"key": "petId"
+												}
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"responseTime": null,
+									"body": ""
 								}
 							]
 						},
 						{
 							"name": "Updates a pet in the store with form data",
-							"_postman_id": "4bb5e00d-ac39-4044-a4ec-1999964a2bc6",
+							"id": "4bb5e00d-ac39-4044-a4ec-1999964a2bc6",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -350,8 +345,7 @@
 											"key": "status",
 											"value": "<string>"
 										}
-									],
-									"options": {}
+									]
 								},
 								"url": {
 									"raw": "{{baseUrl}}/pet/:petId",
@@ -366,8 +360,7 @@
 										{
 											"id": "c3dd9a49-6cdd-4e2a-9ed9-0148ad435e19",
 											"key": "petId",
-											"value": "<long>",
-											"type": "string"
+											"value": "<long>"
 										}
 									]
 								}
@@ -432,7 +425,7 @@
 						},
 						{
 							"name": "Deletes a pet",
-							"_postman_id": "cfef04b0-f560-40a2-84d2-a62050344949",
+							"id": "cfef04b0-f560-40a2-84d2-a62050344949",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -465,8 +458,7 @@
 										{
 											"id": "367f1eb1-e387-4ea7-9642-e66e2046919e",
 											"key": "petId",
-											"value": "<long>",
-											"type": "string"
+											"value": "<long>"
 										}
 									]
 								}
@@ -555,15 +547,14 @@
 							]
 						}
 					],
-					"_postman_id": "7ef0ebfb-9d66-4e7f-95bb-a79403844199",
-					"_postman_isSubFolder": true
+					"id": "7ef0ebfb-9d66-4e7f-95bb-a79403844199"
 				},
 				{
 					"name": "findByStatus",
 					"item": [
 						{
 							"name": "Finds Pets by status",
-							"_postman_id": "6092c330-232c-4073-a694-8060079c144a",
+							"id": "6092c330-232c-4073-a694-8060079c144a",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -696,15 +687,14 @@
 							]
 						}
 					],
-					"_postman_id": "6db72317-5527-4804-9677-fa006e781574",
-					"_postman_isSubFolder": true
+					"id": "6db72317-5527-4804-9677-fa006e781574"
 				},
 				{
 					"name": "findByTags",
 					"item": [
 						{
 							"name": "Finds Pets by tags",
-							"_postman_id": "51bec498-8b68-4cd2-b02d-bd5bb52b0613",
+							"id": "51bec498-8b68-4cd2-b02d-bd5bb52b0613",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -837,12 +827,11 @@
 							]
 						}
 					],
-					"_postman_id": "56ed8349-4e23-4a96-9a62-f92c68345fb1",
-					"_postman_isSubFolder": true
+					"id": "56ed8349-4e23-4a96-9a62-f92c68345fb1"
 				},
 				{
 					"name": "Add a new pet to the store",
-					"_postman_id": "a016b7b7-6322-4f42-a726-b2fe0bf7b26a",
+					"id": "a016b7b7-6322-4f42-a726-b2fe0bf7b26a",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -915,7 +904,7 @@
 				},
 				{
 					"name": "Update an existing pet",
-					"_postman_id": "4becf35f-88c4-4407-b36e-65d583d17e55",
+					"id": "4becf35f-88c4-4407-b36e-65d583d17e55",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -949,8 +938,8 @@
 					},
 					"response": [
 						{
-							"id": "37546b13-d478-4efd-9d73-abeefc4e1b7f",
-							"name": "Validation exception",
+							"id": "aaab82af-6bd5-43f8-a04e-95e69ca4dfbc",
+							"name": "Invalid ID supplied",
 							"originalRequest": {
 								"method": "PUT",
 								"header": [
@@ -976,8 +965,8 @@
 								},
 								"url": "{{baseUrl}}/pet"
 							},
-							"status": "Method Not Allowed",
-							"code": 405,
+							"status": "Bad Request",
+							"code": 400,
 							"_postman_previewlanguage": "text",
 							"header": [],
 							"cookie": [],
@@ -1021,8 +1010,8 @@
 							"body": ""
 						},
 						{
-							"id": "aaab82af-6bd5-43f8-a04e-95e69ca4dfbc",
-							"name": "Invalid ID supplied",
+							"id": "37546b13-d478-4efd-9d73-abeefc4e1b7f",
+							"name": "Validation exception",
 							"originalRequest": {
 								"method": "PUT",
 								"header": [
@@ -1048,8 +1037,8 @@
 								},
 								"url": "{{baseUrl}}/pet"
 							},
-							"status": "Bad Request",
-							"code": 400,
+							"status": "Method Not Allowed",
+							"code": 405,
 							"_postman_previewlanguage": "text",
 							"header": [],
 							"cookie": [],
@@ -1059,7 +1048,7 @@
 					]
 				}
 			],
-			"_postman_id": "ab495cc9-c3dd-4c08-880d-67db13fccf78"
+			"id": "ab495cc9-c3dd-4c08-880d-67db13fccf78"
 		},
 		{
 			"name": "store",
@@ -1072,7 +1061,7 @@
 							"item": [
 								{
 									"name": "Find purchase order by ID",
-									"_postman_id": "b2dcf57a-d0f4-48d5-96a1-c580c770f6a3",
+									"id": "b2dcf57a-d0f4-48d5-96a1-c580c770f6a3",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -1098,14 +1087,54 @@
 												{
 													"id": "6a94719f-9db0-4421-ab2a-8ffec9407ba5",
 													"key": "orderId",
-													"value": "<long>",
-													"type": "string"
+													"value": "<long>"
 												}
 											]
 										},
 										"description": "For valid response try integer IDs with value >= 1 and <= 10. Other values will generated exceptions"
 									},
 									"response": [
+										{
+											"id": "c83c133b-2371-4af9-a3cc-5334749b7749",
+											"name": "successful operation",
+											"originalRequest": {
+												"method": "GET",
+												"header": [
+													{
+														"key": "Accept",
+														"value": "application/json"
+													}
+												],
+												"url": {
+													"raw": "{{baseUrl}}/store/order/:orderId",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"store",
+														"order",
+														":orderId"
+													],
+													"variable": [
+														{
+															"key": "orderId"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json"
+												}
+											],
+											"cookie": [],
+											"responseTime": null,
+											"body": "{\n  \"id\": \"<long>\",\n  \"petId\": \"<long>\",\n  \"quantity\": \"<integer>\",\n  \"shipDate\": \"<dateTime>\",\n  \"status\": \"placed\",\n  \"complete\": \"<boolean>\"\n}"
+										},
 										{
 											"id": "1c97b81c-611e-4506-8541-0bdf643fd6df",
 											"name": "Invalid ID supplied",
@@ -1167,53 +1196,12 @@
 											"cookie": [],
 											"responseTime": null,
 											"body": ""
-										},
-										{
-											"id": "c83c133b-2371-4af9-a3cc-5334749b7749",
-											"name": "successful operation",
-											"originalRequest": {
-												"method": "GET",
-												"header": [
-													{
-														"key": "Accept",
-														"value": "application/json"
-													}
-												],
-												"url": {
-													"raw": "{{baseUrl}}/store/order/:orderId",
-													"host": [
-														"{{baseUrl}}"
-													],
-													"path": [
-														"store",
-														"order",
-														":orderId"
-													],
-													"variable": [
-														{
-															"key": "orderId"
-														}
-													]
-												}
-											},
-											"status": "OK",
-											"code": 200,
-											"_postman_previewlanguage": "json",
-											"header": [
-												{
-													"key": "Content-Type",
-													"value": "application/json"
-												}
-											],
-											"cookie": [],
-											"responseTime": null,
-											"body": "{\n  \"id\": \"<long>\",\n  \"petId\": \"<long>\",\n  \"quantity\": \"<integer>\",\n  \"shipDate\": \"<dateTime>\",\n  \"status\": \"placed\",\n  \"complete\": \"<boolean>\"\n}"
 										}
 									]
 								},
 								{
 									"name": "Delete purchase order by ID",
-									"_postman_id": "aeb8f139-0950-47b6-a148-ae13c224f847",
+									"id": "aeb8f139-0950-47b6-a148-ae13c224f847",
 									"protocolProfileBehavior": {
 										"disableBodyPruning": true
 									},
@@ -1234,8 +1222,7 @@
 												{
 													"id": "1c731800-21da-4e11-b0e8-6f7cba792946",
 													"key": "orderId",
-													"value": "<long>",
-													"type": "string"
+													"value": "<long>"
 												}
 											]
 										},
@@ -1307,12 +1294,11 @@
 									]
 								}
 							],
-							"_postman_id": "7b215a73-5146-4114-881b-5abc30e830ff",
-							"_postman_isSubFolder": true
+							"id": "7b215a73-5146-4114-881b-5abc30e830ff"
 						},
 						{
 							"name": "Place an order for a pet",
-							"_postman_id": "12625314-99b2-4b9b-aca3-6840c814b168",
+							"id": "12625314-99b2-4b9b-aca3-6840c814b168",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -1415,15 +1401,14 @@
 							]
 						}
 					],
-					"_postman_id": "c78f7011-6933-4928-9f73-7f9385c3ff39",
-					"_postman_isSubFolder": true
+					"id": "c78f7011-6933-4928-9f73-7f9385c3ff39"
 				},
 				{
 					"name": "inventory",
 					"item": [
 						{
 							"name": "Returns pet inventories by status",
-							"_postman_id": "b3a442be-3239-4791-828b-5635c05f2419",
+							"id": "b3a442be-3239-4791-828b-5635c05f2419",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -1481,11 +1466,10 @@
 							]
 						}
 					],
-					"_postman_id": "2a8673fa-31ee-4f73-9928-a7b99e577cde",
-					"_postman_isSubFolder": true
+					"id": "2a8673fa-31ee-4f73-9928-a7b99e577cde"
 				}
 			],
-			"_postman_id": "1c0922de-82e0-4481-84d1-259f1fce4bab"
+			"id": "1c0922de-82e0-4481-84d1-259f1fce4bab"
 		},
 		{
 			"name": "user",
@@ -1495,7 +1479,7 @@
 					"item": [
 						{
 							"name": "Creates list of users with given input array",
-							"_postman_id": "76fd3cbe-b19c-4065-b583-8d8b1aeca569",
+							"id": "76fd3cbe-b19c-4065-b583-8d8b1aeca569",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -1554,15 +1538,14 @@
 							]
 						}
 					],
-					"_postman_id": "bfea89b2-5942-4286-ba39-b944ca6b0c03",
-					"_postman_isSubFolder": true
+					"id": "bfea89b2-5942-4286-ba39-b944ca6b0c03"
 				},
 				{
 					"name": "createWithList",
 					"item": [
 						{
 							"name": "Creates list of users with given input array",
-							"_postman_id": "f9b33845-b959-43f6-b9fa-050487f9f24a",
+							"id": "f9b33845-b959-43f6-b9fa-050487f9f24a",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -1621,15 +1604,14 @@
 							]
 						}
 					],
-					"_postman_id": "d86d5a06-fa07-4e01-a94f-0fbe678e2565",
-					"_postman_isSubFolder": true
+					"id": "d86d5a06-fa07-4e01-a94f-0fbe678e2565"
 				},
 				{
 					"name": "{username}",
 					"item": [
 						{
 							"name": "Get user by user name",
-							"_postman_id": "29fb88e3-e486-4538-97dd-884387ab06f9",
+							"id": "29fb88e3-e486-4538-97dd-884387ab06f9",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -1654,43 +1636,12 @@
 										{
 											"id": "73d8f021-6e05-4b99-9572-4d183369f329",
 											"key": "username",
-											"value": "<string>",
-											"type": "string"
+											"value": "<string>"
 										}
 									]
 								}
 							},
 							"response": [
-								{
-									"id": "1157f78c-0275-4c52-a2cc-c9ec9c155c2c",
-									"name": "Invalid username supplied",
-									"originalRequest": {
-										"method": "GET",
-										"header": [],
-										"url": {
-											"raw": "{{baseUrl}}/user/:username",
-											"host": [
-												"{{baseUrl}}"
-											],
-											"path": [
-												"user",
-												":username"
-											],
-											"variable": [
-												{
-													"key": "username"
-												}
-											]
-										}
-									},
-									"status": "Bad Request",
-									"code": 400,
-									"_postman_previewlanguage": "text",
-									"header": [],
-									"cookie": [],
-									"responseTime": null,
-									"body": ""
-								},
 								{
 									"id": "446bddfc-41ce-4619-a1ec-5d5a7736a41d",
 									"name": "successful operation",
@@ -1732,6 +1683,36 @@
 									"body": "{\n  \"id\": \"<long>\",\n  \"username\": \"<string>\",\n  \"firstName\": \"<string>\",\n  \"lastName\": \"<string>\",\n  \"email\": \"<string>\",\n  \"password\": \"<string>\",\n  \"phone\": \"<string>\",\n  \"userStatus\": \"<integer>\"\n}"
 								},
 								{
+									"id": "1157f78c-0275-4c52-a2cc-c9ec9c155c2c",
+									"name": "Invalid username supplied",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/user/:username",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"user",
+												":username"
+											],
+											"variable": [
+												{
+													"key": "username"
+												}
+											]
+										}
+									},
+									"status": "Bad Request",
+									"code": 400,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"responseTime": null,
+									"body": ""
+								},
+								{
 									"id": "50a730e7-85e6-4319-850b-108238615782",
 									"name": "User not found",
 									"originalRequest": {
@@ -1765,7 +1746,7 @@
 						},
 						{
 							"name": "Updated user",
-							"_postman_id": "b141e878-2896-49c7-bc3a-5c76a4725617",
+							"id": "b141e878-2896-49c7-bc3a-5c76a4725617",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -1800,59 +1781,13 @@
 										{
 											"id": "af8d6caa-b659-41ea-b4b7-86c2cbfd9f8b",
 											"key": "username",
-											"value": "<string>",
-											"type": "string"
+											"value": "<string>"
 										}
 									]
 								},
 								"description": "This can only be done by the logged in user."
 							},
 							"response": [
-								{
-									"id": "70715dfd-fdc8-4090-a0ff-6f752c91dd51",
-									"name": "User not found",
-									"originalRequest": {
-										"method": "PUT",
-										"header": [
-											{
-												"key": "Content-Type",
-												"value": "application/json"
-											}
-										],
-										"body": {
-											"mode": "raw",
-											"raw": "{\n  \"id\": \"<long>\",\n  \"username\": \"<string>\",\n  \"firstName\": \"<string>\",\n  \"lastName\": \"<string>\",\n  \"email\": \"<string>\",\n  \"password\": \"<string>\",\n  \"phone\": \"<string>\",\n  \"userStatus\": \"<integer>\"\n}",
-											"options": {
-												"raw": {
-													"headerFamily": "json",
-													"language": "json"
-												}
-											}
-										},
-										"url": {
-											"raw": "{{baseUrl}}/user/:username",
-											"host": [
-												"{{baseUrl}}"
-											],
-											"path": [
-												"user",
-												":username"
-											],
-											"variable": [
-												{
-													"key": "username"
-												}
-											]
-										}
-									},
-									"status": "Not Found",
-									"code": 404,
-									"_postman_previewlanguage": "text",
-									"header": [],
-									"cookie": [],
-									"responseTime": null,
-									"body": ""
-								},
 								{
 									"id": "aea307da-4e9a-450c-a879-438d9b261a41",
 									"name": "Invalid user supplied",
@@ -1897,45 +1832,28 @@
 									"cookie": [],
 									"responseTime": null,
 									"body": ""
-								}
-							]
-						},
-						{
-							"name": "Delete user",
-							"_postman_id": "9b9dd930-704d-4094-97cf-7ca9bd31959a",
-							"protocolProfileBehavior": {
-								"disableBodyPruning": true
-							},
-							"request": {
-								"method": "DELETE",
-								"header": [],
-								"url": {
-									"raw": "{{baseUrl}}/user/:username",
-									"host": [
-										"{{baseUrl}}"
-									],
-									"path": [
-										"user",
-										":username"
-									],
-									"variable": [
-										{
-											"id": "a36ef82c-1c73-4864-94a7-3e59cb6733f9",
-											"key": "username",
-											"value": "<string>",
-											"type": "string"
-										}
-									]
 								},
-								"description": "This can only be done by the logged in user."
-							},
-							"response": [
 								{
-									"id": "29a2f444-2242-48d9-87ab-2b28155aa4ca",
+									"id": "70715dfd-fdc8-4090-a0ff-6f752c91dd51",
 									"name": "User not found",
 									"originalRequest": {
-										"method": "DELETE",
-										"header": [],
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"id\": \"<long>\",\n  \"username\": \"<string>\",\n  \"firstName\": \"<string>\",\n  \"lastName\": \"<string>\",\n  \"email\": \"<string>\",\n  \"password\": \"<string>\",\n  \"phone\": \"<string>\",\n  \"userStatus\": \"<integer>\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
 										"url": {
 											"raw": "{{baseUrl}}/user/:username",
 											"host": [
@@ -1959,7 +1877,38 @@
 									"cookie": [],
 									"responseTime": null,
 									"body": ""
+								}
+							]
+						},
+						{
+							"name": "Delete user",
+							"id": "9b9dd930-704d-4094-97cf-7ca9bd31959a",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/user/:username",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"user",
+										":username"
+									],
+									"variable": [
+										{
+											"id": "a36ef82c-1c73-4864-94a7-3e59cb6733f9",
+											"key": "username",
+											"value": "<string>"
+										}
+									]
 								},
+								"description": "This can only be done by the logged in user."
+							},
+							"response": [
 								{
 									"id": "e0af02d9-8298-4b80-ae46-20be67d22c19",
 									"name": "Invalid username supplied",
@@ -1989,19 +1938,48 @@
 									"cookie": [],
 									"responseTime": null,
 									"body": ""
+								},
+								{
+									"id": "29a2f444-2242-48d9-87ab-2b28155aa4ca",
+									"name": "User not found",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/user/:username",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"user",
+												":username"
+											],
+											"variable": [
+												{
+													"key": "username"
+												}
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"responseTime": null,
+									"body": ""
 								}
 							]
 						}
 					],
-					"_postman_id": "3b9a680b-46a9-4ec6-aba1-5f5fae37e2a3",
-					"_postman_isSubFolder": true
+					"id": "3b9a680b-46a9-4ec6-aba1-5f5fae37e2a3"
 				},
 				{
 					"name": "login",
 					"item": [
 						{
 							"name": "Logs user into the system",
-							"_postman_id": "e7678a4b-f912-4390-8023-e7a3309581dc",
+							"id": "e7678a4b-f912-4390-8023-e7a3309581dc",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -2142,15 +2120,14 @@
 							]
 						}
 					],
-					"_postman_id": "760771ee-9411-459e-ae6b-32c58a1058d9",
-					"_postman_isSubFolder": true
+					"id": "760771ee-9411-459e-ae6b-32c58a1058d9"
 				},
 				{
 					"name": "logout",
 					"item": [
 						{
 							"name": "Logs out current logged in user session",
-							"_postman_id": "d669bb42-6a7b-4625-9194-1b7bb941e79f",
+							"id": "d669bb42-6a7b-4625-9194-1b7bb941e79f",
 							"protocolProfileBehavior": {
 								"disableBodyPruning": true
 							},
@@ -2179,12 +2156,11 @@
 							]
 						}
 					],
-					"_postman_id": "e52de0dd-d7ef-4872-879e-b757eb81d074",
-					"_postman_isSubFolder": true
+					"id": "e52de0dd-d7ef-4872-879e-b757eb81d074"
 				},
 				{
 					"name": "Create user",
-					"_postman_id": "88456026-3c61-468a-adff-be08e6950416",
+					"id": "88456026-3c61-468a-adff-be08e6950416",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
 					},
@@ -2244,15 +2220,14 @@
 					]
 				}
 			],
-			"_postman_id": "05c02871-4034-4905-b0a1-fa815f2ea383"
+			"id": "05c02871-4034-4905-b0a1-fa815f2ea383"
 		}
 	],
 	"variable": [
 		{
-			"id": "3236359f-e5ea-406f-96c3-0ccb126e444b",
+			"id": "7b1a23b4-b8b0-40b5-a262-d0f7d905e340",
 			"key": "baseUrl",
-			"value": "https://petstore.swagger.io/v2",
-			"type": "string"
+			"value": "https://petstore.swagger.io/v2"
 		}
 	]
 }
