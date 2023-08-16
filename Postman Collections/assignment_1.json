@@ -576,15 +576,17 @@
 										"exec": [
 											"const schema = {\r",
 											"    \"type\": \"array\",\r",
-											"    \"properties\": {\r",
-											"        \"id\": {\"type\": \"number\"},\r",
-											"        \"category\":{\r",
-											"            \"type\": \"object\",\r",
-											"            \"properties\":{\r",
-											"                \"id\": {\"type\": \"number\"},\r",
-											"                \"name\": {\"type\": \"string\"}\r",
-											"            }\r",
-											"        },\r",
+											"    \"items\": {\r",
+											"        \"type\": \"object\",\r",
+											"        \"properties\": {\r",
+											"            \"id\": {\"type\": \"number\"},\r",
+											"            \"category\":{\r",
+											"                \"type\": \"object\",\r",
+											"                \"properties\":{\r",
+											"                    \"id\": {\"type\": \"number\"},\r",
+											"                    \"name\": {\"type\": \"string\"}\r",
+											"                }\r",
+											"            },\r",
 											"        \"name\": {\"type\": \"string\"},\r",
 											"        \"photoUrls\":{\r",
 											"            \"type\": \"array\",\r",
@@ -594,13 +596,16 @@
 											"            \"type\": \"array\",\r",
 											"            \"items\": {\r",
 											"                \"type\": \"object\",\r",
-											"                \"id\": {\"type\": \"number\"},\r",
-											"                \"name\": {\"type\": \"string\"}\r",
+											"                \"properties\":{\r",
+											"                    \"id\": {\"type\": \"number\"},\r",
+											"                    \"name\": {\"type\": \"string\"}\r",
+											"                }\r",
 											"            }\r",
 											"        },\r",
 											"       \"status\": {\"type\": \"string\"} \r",
+											"        },        \r",
 											"    },\r",
-											"    \"required\": [\"id\", \"category\", \"name\", \"photoUrls\", \"tags\", \"status\"]\r",
+											"    \"required\": [\"id\", \"category\", \"name\", \"photoUrls\", \"tags\", \"status\"],\r",
 											"};\r",
 											"\r",
 											"pm.test(\"Status code is 200\", function () {\r",
@@ -609,8 +614,7 @@
 											"\r",
 											"pm.test(\"Validate schema\", () => {\r",
 											"    pm.response.to.have.jsonSchema(schema);\r",
-											"});\r",
-											""
+											"});"
 										],
 										"type": "text/javascript"
 									}
@@ -2287,7 +2291,7 @@
 	],
 	"variable": [
 		{
-			"id": "6c43f3d4-50eb-462c-a925-ec94491ad091",
+			"id": "1176c1f1-37e9-4957-9480-25f5ff634552",
 			"key": "baseUrl",
 			"value": "https://petstore.swagger.io/v2"
 		}
