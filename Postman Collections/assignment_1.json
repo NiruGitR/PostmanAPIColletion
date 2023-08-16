@@ -992,7 +992,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"name\": \"doggie\",\n  \"photoUrls\": [\n    \"dolore cillum do ipsum\",\n    \"cupidatat Ut amet voluptate\"\n  ],\n  \"id\": 9206342,\n  \"category\": {\n    \"id\": -86392345,\n    \"name\": \"reprehenderit incididunt Ut\"\n  },\n  \"tags\": [\n    {\n      \"id\": 11986234,\n      \"name\": \"s\"\n    },\n    {\n      \"id\": 75726242,\n      \"name\": \"dolor consequat mollit tempor\"\n    }\n  ],\n  \"status\": \"pending\"\n}",
+							"raw": "{\n  \"name\": \"doggie\",\n  \"photoUrls\": [\n    \"dolore cillum do ipsum\",\n    \"cupidatat Ut amet voluptate\"\n  ],\n  \"id\": 9206342,\n  \"category\": {\n    \"id\": -86392345,\n    \"name\": \"reprehenderit incididunt Ut\"\n  },\n  \"tags\": [\n    {\n      \"id\": 11986234,\n      \"name\": \"s\"\n    },\n    {\n      \"id\": 75726242,\n      \"name\": \"dolor consequat mollit tempor\"\n    }\n  ],\n  \"status\": \"available\"\n}",
 							"options": {
 								"raw": {
 									"headerFamily": "json",
@@ -2364,7 +2364,7 @@
 	],
 	"variable": [
 		{
-			"id": "e7aceadc-86ff-4fad-9c6d-625b4519338a",
+			"id": "0bfd0852-fbde-47f4-a73d-342e971a7311",
 			"key": "baseUrl",
 			"value": "https://petstore.swagger.io/v2"
 		}
