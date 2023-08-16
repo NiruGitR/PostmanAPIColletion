@@ -579,7 +579,7 @@
 											"    \"properties\": {\r",
 											"        \"id\": {\"type\": \"number\"},\r",
 											"        \"category\":{\r",
-											"            \"type\": \"object\",\r",
+											"            //\"type\": \"object\",\r",
 											"            \"properties\":{\r",
 											"                \"id\": {\"type\": \"number\"},\r",
 											"                \"name\": {\"type\": \"string\"}\r",
@@ -2285,7 +2285,7 @@
 	],
 	"variable": [
 		{
-			"id": "396b75d3-0ac9-4f82-9446-f425f5d4a0b8",
+			"id": "1ba3d6e1-d0a0-414e-8835-8b523d12f6e2",
 			"key": "baseUrl",
 			"value": "https://petstore.swagger.io/v2"
 		}
