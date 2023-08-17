@@ -912,7 +912,7 @@
 									"    pm.expect(response.json.name).to.eql(pm.iterationData.get(\"name\"));\r",
 									"\r",
 									"    for (let photoUrls1 of response.photoUrls){\r",
-									"        pm.expect(response.photoUrls1).to.include(pm.iterationData.get(\"photoUrls\"));\r",
+									"        pm.expect(response.photoUrls1).to.include(pm.iterationData.get(\"photoUrlsxx\"));\r",
 									"    }\r",
 									"\r",
 									"    pm.expect(response.json.id).to.eql(pm.iterationData.get(\"id\"));\r",
@@ -921,8 +921,8 @@
 									"    pm.expect(response.json.category.name).to.eql(pm.iterationData.get(\"categoryname\"));\r",
 									"\r",
 									"    for (let tags of response.tags){\r",
-									"        pm.expect(response.tags).to.include(pm.iterationData.get(\"id\"));\r",
-									"        pm.expect(response.tags[1]).to.include(pm.iterationData.get(\"name\"));\r",
+									"        pm.expect(response.tags[0]).to.include(pm.iterationData.get(\"tagsid\"));\r",
+									"        pm.expect(response.tags[1]).to.include(pm.iterationData.get(\"tagsname\"));\r",
 									"    }\r",
 									"\r",
 									"    pm.expect(response.json.status).to.eql(pm.iterationData.get(\"status\"));\r",
@@ -2399,7 +2399,7 @@
 	],
 	"variable": [
 		{
-			"id": "2d423b5d-9b61-41ab-b9be-e2d4532c5bef",
+			"id": "d1b0c641-e3a3-4c14-af49-ee476969631f",
 			"key": "baseUrl",
 			"value": "https://petstore.swagger.io/v2"
 		}
