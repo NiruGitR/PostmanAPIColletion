@@ -907,6 +907,7 @@
 									"  if(this.item === undefined) {return}\r",
 									"\r",
 									"  pm.test(\"Verify pet\", function(){\r",
+									"\r",
 									"    const response = pm.response.json();\r",
 									"    pm.expect(response.json.name).to.eql(pm.iterationData.get(\"name\"));\r",
 									"\r",
@@ -959,7 +960,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"name\": \"{{name}}\",\n  \"photoUrls\": [\n    \"{{photoUrls}}\"\n  ],\n  \"id\": {{id}},\n  \"category\": {\n    \"id\": 86392345,\n    \"name\": \"reprehenderit incididunt Ut\"\n  },\n  \"tags\": [\n    {\n      \"id\": 11986234,\n      \"name\": \"s\"\n    }\n  ],\n  \"status\": \"{{status}}\"\n}",
+							"raw": "{\n  \"name\": \"{{name}}\",\n  \"photoUrls\": [\n    \"{{photoUrls}}\"\n  ],\n  \"id\": {{id}},\n  \"category\": {\n    \"id\":-86392345,\n    \"name\":\"reprehenderit incididunt Ut\"\n  },\n  \"tags\": [\n    {\n        \"id\":11986234,\n        \"name\":\"s\"\n    }\n  ],\n  \"status\": \"{{status}}\"\n}",
 							"options": {
 								"raw": {
 									"headerFamily": "json",
@@ -2404,7 +2405,7 @@
 	],
 	"variable": [
 		{
-			"id": "5a0f4a5c-566a-4311-aac6-bc4f0a02132b",
+			"id": "a202b5bf-4267-4a9b-9daf-03e1a38a6694",
 			"key": "baseUrl",
 			"value": "https://petstore.swagger.io/v2"
 		}
