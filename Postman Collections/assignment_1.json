@@ -906,7 +906,7 @@
 									"pm.test(\"Status code is 200\", function () {\r",
 									"    pm.response.to.have.status(200);\r",
 									"});\r",
-									"\r",
+									" \r",
 									"pm.test(\"Verify pet\", function(){\r",
 									"    const response = pm.response.json();\r",
 									"    pm.expect(response.json.name).to.eql(pm.iterationData.get(\"name\"));\r",
@@ -2399,7 +2399,7 @@
 	],
 	"variable": [
 		{
-			"id": "78ba80f7-343d-4401-bd26-2446fb50f6df",
+			"id": "1abf953c-74eb-4232-a972-a68811807bcc",
 			"key": "baseUrl",
 			"value": "https://petstore.swagger.io/v2"
 		}
