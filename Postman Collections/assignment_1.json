@@ -897,6 +897,47 @@
 				},
 				{
 					"name": "Add a new pet to the store",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "0cec5b35-dc56-4965-aabe-581442a37abd",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"/*for (let tags of response.tags){\r",
+									"\r",
+									"}*/\r",
+									"\r",
+									"pm.test(\"Verify pet\", function(){\r",
+									"    const response = pm.response.json();\r",
+									"    pm.expect(response.json.name).to.eql(pm.iterationData.get(\"name\"));\r",
+									"\r",
+									"    //pm.expect(response.photoUrls).to.include(pm.iterationData.get(\"photoUrls1\"));\r",
+									"    for (let photoUrls of response.photoUrls){\r",
+									"        pm.expect(response.photoUrls).to.include(pm.iterationData.get(\"photoUrls\"));\r",
+									"    }\r",
+									"\r",
+									"    pm.expect(response.json.id).to.eql(pm.iterationData.get(\"id\"));\r",
+									"    pm.expect(response.json.category.id).to.eql(pm.iterationData.get(\"categoryid\"));\r",
+									"    pm.expect(response.json.category.name).to.eql(pm.iterationData.get(\"categoryname\"));\r",
+									"\r",
+									"    //pm.expect(response.json.tags.id).to.include(pm.iterationData.get(\"tagsid1\"));\r",
+									"    //pm.expect(response.json.tags.name).to.include(pm.iterationData.get(\"tagsname1\"));\r",
+									"    for (let tags of response.tags){\r",
+									"        pm.expect(response.json.tags.id).to.include(pm.iterationData.get(\"tagsid\"));\r",
+									"        pm.expect(response.json.tags.name).to.include(pm.iterationData.get(\"tagsname\"));\r",
+									"    }\r",
+									"\r",
+									"    pm.expect(response.json.status).to.eql(pm.iterationData.get(\"status\"));\r",
+									"})"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"id": "a016b7b7-6322-4f42-a726-b2fe0bf7b26a",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -919,7 +960,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"name\": \"<string>\",\n  \"photoUrls\": [\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"id\": \"<long>\",\n  \"category\": {\n    \"id\": \"<long>\",\n    \"name\": \"<string>\"\n  },\n  \"tags\": [\n    {\n      \"id\": \"<long>\",\n      \"name\": \"<string>\"\n    },\n    {\n      \"id\": \"<long>\",\n      \"name\": \"<string>\"\n    }\n  ],\n  \"status\": \"available\"\n}",
+							"raw": "{\n  \"name\": \"{{name}}\",\n  \"photoUrls\": [\n    \"{{photoUrls}}\"\n  ],\n  \"id\": {{id}},\n  \"category\": {\n    \"id\": {{categoryid}},\n    \"name\": \"{{categoryname}}\"\n  },\n  \"tags\": [\n    {\n      \"id\": {{tagsid}},\n      \"name\": \"{{tagsname}}\"\n    }\n  ],\n  \"status\": \"{{status}}\"\n}",
 							"options": {
 								"raw": {
 									"headerFamily": "json",
@@ -932,6 +973,79 @@
 					"response": [
 						{
 							"id": "d4c851f1-c011-4f84-bbd5-6cf0f77284e5",
+							"name": "Invalid input",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									},
+									{
+										"description": "Added as a part of security scheme: oauth2",
+										"key": "Authorization",
+										"value": "<token>"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"name\": \"<string>\",\n  \"photoUrls\": [\n    \"<string>\",\n    \"<string>\"\n  ],\n  \"id\": \"<long>\",\n  \"category\": {\n    \"id\": \"<long>\",\n    \"name\": \"<string>\"\n  },\n  \"tags\": [\n    {\n      \"id\": \"<long>\",\n      \"name\": \"<string>\"\n    },\n    {\n      \"id\": \"<long>\",\n      \"name\": \"<string>\"\n    }\n  ],\n  \"status\": \"available\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": "{{baseUrl}}/pet"
+							},
+							"status": "Method Not Allowed",
+							"code": 405,
+							"_postman_previewlanguage": "text",
+							"header": [],
+							"cookie": [],
+							"responseTime": null,
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "Copy Add a new pet to the store",
+					"id": "fc4e22ec-e821-4c67-a7b4-a79e1295d9ec",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "oauth2",
+							"oauth2": {
+								"scope": "read:pets write:pets",
+								"authUrl": "https://petstore.swagger.io/oauth/authorize",
+								"grant_type": "implicit"
+							}
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"doggie\",\n  \"photoUrls\": [\n    \"dolore cillum do ipsum\",\n    \"cupidatat Ut amet voluptate\"\n  ],\n  \"id\": 9206342,\n  \"category\": {\n    \"id\": -86392345,\n    \"name\": \"reprehenderit incididunt Ut\"\n  },\n  \"tags\": [\n    {\n      \"id\": 11986234,\n      \"name\": \"s\"\n    },\n    {\n      \"id\": 75726242,\n      \"name\": \"dolor consequat mollit tempor\"\n    }\n  ],\n  \"status\": \"available\"\n}",
+							"options": {
+								"raw": {
+									"headerFamily": "json",
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/pet"
+					},
+					"response": [
+						{
+							"id": "b707d29c-14de-4dde-844c-6527d786983e",
 							"name": "Invalid input",
 							"originalRequest": {
 								"method": "POST",
@@ -2291,7 +2405,7 @@
 	],
 	"variable": [
 		{
-			"id": "1176c1f1-37e9-4957-9480-25f5ff634552",
+			"id": "6d6c2851-1a6a-4de6-9fe3-e6b8d5df41a6",
 			"key": "baseUrl",
 			"value": "https://petstore.swagger.io/v2"
 		}
