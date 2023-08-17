@@ -910,6 +910,13 @@
 									"pm.test(\"Verify pet\", function(){\r",
 									"    const response = pm.response.json();\r",
 									"    pm.expect(response.json.name).to.eql(pm.iterationData.get(\"name\"));\r",
+									"    pm.expect(response.photoUrls).to.include(pm.iterationData.get(\"photoUrls1\"));\r",
+									"    pm.expect(response.json.id).to.eql(pm.iterationData.get(\"id\"));\r",
+									"    pm.expect(response.json.category.id).to.eql(pm.iterationData.get(\"categoryid\"));\r",
+									"    pm.expect(response.json.category.name).to.eql(pm.iterationData.get(\"categoryname\"));\r",
+									"    pm.expect(response.json.tags.id).to.include(pm.iterationData.get(\"tagsid1\"));\r",
+									"    pm.expect(response.json.tags.name).to.include(pm.iterationData.get(\"tagsname1\"));\r",
+									"    pm.expect(response.json.status).to.eql(pm.iterationData.get(\"status\"));\r",
 									"})"
 								],
 								"type": "text/javascript"
@@ -2383,7 +2390,7 @@
 	],
 	"variable": [
 		{
-			"id": "3d1f3c5e-5ecf-4ab2-8da2-7f6618a0cdea",
+			"id": "4f9a885a-c365-44e4-a11f-7b1838ac632c",
 			"key": "baseUrl",
 			"value": "https://petstore.swagger.io/v2"
 		}
