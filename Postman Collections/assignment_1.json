@@ -956,7 +956,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"name\": \"{{name}}\",\n  \"photoUrls\": [\n    \"{{photoUrls1}}\",\n    \"{{photoUrls2}}\"\n  ],\n  \"id\": {{id}},\n  \"category\": {\n    \"id\": {{categoryid}},\n    \"name\": \"{{categoryname}}\"\n  },\n  \"tags\": [\n    {\n      \"id\": {{tagsid1}},\n      \"name\": \"{{tagsname1}}\"\n    },\n    {\n      \"id\": {{tagsid2}},\n      \"name\": \"{{tagsname2}}\"\n    }\n  ],\n  \"status\": \"{{status}}\"\n}",
+							"raw": "{\n  \"name\": \"{{name}}\",\n  \"photoUrls\": [\n    \"{{photoUrls}}\"\n  ],\n  \"id\": {{id}},\n  \"category\": {\n    \"id\": {{categoryid}},\n    \"name\": \"{{categoryname}}\"\n  },\n  \"tags\": [\n    {\n      \"id\": {{tagsid1}},\n      \"name\": \"{{tagsname1}}\"\n    },\n    {\n      \"id\": {{tagsid2}},\n      \"name\": \"{{tagsname2}}\"\n    }\n  ],\n  \"status\": \"{{status}}\"\n}",
 							"options": {
 								"raw": {
 									"headerFamily": "json",
@@ -2401,7 +2401,7 @@
 	],
 	"variable": [
 		{
-			"id": "324245ef-9b65-424f-a0f0-8dcb7e0bad2b",
+			"id": "b75d31e8-0ee3-4dc0-aa65-ea8892d7e582",
 			"key": "baseUrl",
 			"value": "https://petstore.swagger.io/v2"
 		}
