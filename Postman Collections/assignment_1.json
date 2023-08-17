@@ -897,6 +897,25 @@
 				},
 				{
 					"name": "Add a new pet to the store",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "0cec5b35-dc56-4965-aabe-581442a37abd",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Verify pet\", function(){\r",
+									"    const response = pm.response.json();\r",
+									"    pm.expect(response.json.name).to.eql(pm.iterationData.get(\"name\"));\r",
+									"})"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
 					"id": "a016b7b7-6322-4f42-a726-b2fe0bf7b26a",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -2364,7 +2383,7 @@
 	],
 	"variable": [
 		{
-			"id": "883e3c80-3c0c-4d52-80b6-001e96e36cda",
+			"id": "3d1f3c5e-5ecf-4ab2-8da2-7f6618a0cdea",
 			"key": "baseUrl",
 			"value": "https://petstore.swagger.io/v2"
 		}
