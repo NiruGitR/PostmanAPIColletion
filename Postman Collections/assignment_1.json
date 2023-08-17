@@ -910,7 +910,7 @@
 									"pm.test(\"Verify pet\", function(){\r",
 									"    const response = JSON.parse(pm.response);\r",
 									"    response = response[0];\r",
-									"    //pm.expect(response.json.name).to.eql(pm.iterationData.get(\"name\"));\r",
+									"    pm.expect(response.name).to.eql(pm.iterationData.get(\"name\"));\r",
 									"\r",
 									"    //pm.expect(response.photoUrls).to.include(pm.iterationData.get(\"photoUrls1\"));\r",
 									"    for (let photoUrls of response.photoUrls){\r",
@@ -2405,7 +2405,7 @@
 	],
 	"variable": [
 		{
-			"id": "cd27d653-5f31-484d-b422-27fce1144bf3",
+			"id": "e0a8b15d-6086-49c7-a407-9b399f3f7fa5",
 			"key": "baseUrl",
 			"value": "https://petstore.swagger.io/v2"
 		}
