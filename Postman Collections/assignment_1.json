@@ -930,6 +930,7 @@
 									"        pm.expect(tags.id).to.include(pm.iterationData.get(\"tagsid\"));\r",
 									"        pm.expect(tags.name).to.include(pm.iterationData.get(\"tagsname\"));\r",
 									"    }\r",
+									"    JSON.stringify(response);\r",
 									"\r",
 									"   // pm.expect(response.json.status).to.eql(pm.iterationData.get(\"status\"));\r",
 									"})"
@@ -2405,7 +2406,7 @@
 	],
 	"variable": [
 		{
-			"id": "e0a8b15d-6086-49c7-a407-9b399f3f7fa5",
+			"id": "42c10ced-f676-4583-9825-79a37531d284",
 			"key": "baseUrl",
 			"value": "https://petstore.swagger.io/v2"
 		}
