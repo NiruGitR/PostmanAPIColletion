@@ -911,7 +911,7 @@
 									"    const response = pm.response.json();\r",
 									"    //const response = pm.response;\r",
 									"    //response = response[0];\r",
-									"    const inheritData = JSON.parse(pm.iterationData);\r",
+									"    //const inheritData = JSON.parse(pm.iterationData);\r",
 									"    inheritData = inheritData[0];\r",
 									"    pm.expect(response.json.name).to.eql(pm.iterationData.get(\"name\"));\r",
 									"    //pm.expect(response[\"name\"]).to.eql(\"ABC\");\r",
@@ -2410,7 +2410,7 @@
 	],
 	"variable": [
 		{
-			"id": "3222b0ae-e826-44fb-9e2e-fbb9b2ad4b37",
+			"id": "90fd818a-cda5-469f-82d2-4feac2d8f245",
 			"key": "baseUrl",
 			"value": "https://petstore.swagger.io/v2"
 		}
