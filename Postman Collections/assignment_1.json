@@ -906,13 +906,13 @@
 									"pm.test(\"Status code is 200\", function () {\r",
 									"    pm.response.to.have.status(200);\r",
 									"});\r",
-									" \r",
+									"\r",
 									"pm.test(\"Verify pet\", function(){\r",
 									"    const response = pm.response.json();\r",
 									"    pm.expect(response.json.name).to.eql(pm.iterationData.get(\"name\"));\r",
 									"\r",
-									"    for (let photoUrls1 of response.photoUrls){\r",
-									"        pm.expect(response.photoUrls1).to.include(pm.iterationData.get(\"xxx\"));\r",
+									"    for (let photoUrls of response.photoUrls){\r",
+									"        pm.expect(response.photoUrls).to.include(pm.iterationData.get(\"photoUrls\"));\r",
 									"    }\r",
 									"\r",
 									"    pm.expect(response.json.id).to.eql(pm.iterationData.get(\"id\"));\r",
@@ -921,8 +921,8 @@
 									"    pm.expect(response.json.category.name).to.eql(pm.iterationData.get(\"categoryname\"));\r",
 									"\r",
 									"    for (let tags of response.tags){\r",
-									"        pm.expect(response.tags[0]).to.include(pm.iterationData.get(\"tagsid\"));\r",
-									"        pm.expect(response.tags[1]).to.include(pm.iterationData.get(\"tagsname\"));\r",
+									"        pm.expect(response.tags.id).to.include(pm.iterationData.get(\"tagsid\"));\r",
+									"        pm.expect(response.tags.name).to.include(pm.iterationData.get(\"tagsname\"));\r",
 									"    }\r",
 									"\r",
 									"    pm.expect(response.json.status).to.eql(pm.iterationData.get(\"status\"));\r",
@@ -2399,7 +2399,7 @@
 	],
 	"variable": [
 		{
-			"id": "375a8d83-4e65-4f71-8ff1-9301bb995119",
+			"id": "c08a3a32-d072-4802-9de4-c3b9f2953493",
 			"key": "baseUrl",
 			"value": "https://petstore.swagger.io/v2"
 		}
