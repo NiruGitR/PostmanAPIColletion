@@ -903,10 +903,6 @@
 							"script": {
 								"id": "0cec5b35-dc56-4965-aabe-581442a37abd",
 								"exec": [
-									"pm.test(\"Status code is 200\", function () {\r",
-									"    pm.response.to.have.status(200);\r",
-									"});\r",
-									"\r",
 									"pm.test(\"Verify pet\", function(){\r",
 									"    const response = pm.response.json();\r",
 									"    pm.expect(response.json.name).to.eql(pm.iterationData.get(\"name\"));\r",
@@ -926,7 +922,11 @@
 									"    }\r",
 									"\r",
 									"    pm.expect(response.json.status).to.eql(pm.iterationData.get(\"status\"));\r",
-									"})"
+									"})\r",
+									"\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
 								],
 								"type": "text/javascript"
 							}
@@ -2399,7 +2399,7 @@
 	],
 	"variable": [
 		{
-			"id": "c08a3a32-d072-4802-9de4-c3b9f2953493",
+			"id": "0ad53e62-546a-42a8-875c-2cf8ca174570",
 			"key": "baseUrl",
 			"value": "https://petstore.swagger.io/v2"
 		}
