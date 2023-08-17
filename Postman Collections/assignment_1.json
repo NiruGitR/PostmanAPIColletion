@@ -913,8 +913,8 @@
 									"    //response = response[0];\r",
 									"    const inheritData = JSON.parse(pm.iterationData);\r",
 									"    inheritData = inheritData[0];\r",
-									"    //pm.expect(response.json.name).to.eql(pm.iterationData.get(\"test\"));\r",
-									"    pm.expect(response[\"name\"]).to.eql(\"ABC\");\r",
+									"    pm.expect(response.json.name).to.eql(pm.iterationData.get(\"name\"));\r",
+									"    //pm.expect(response[\"name\"]).to.eql(\"ABC\");\r",
 									"\r",
 									"    //pm.expect(response.photoUrls).to.include(pm.iterationData.get(\"photoUrls1\"));\r",
 									"    for (let photoUrls of response.photoUrls){\r",
@@ -2410,7 +2410,7 @@
 	],
 	"variable": [
 		{
-			"id": "5348a78c-6e0f-40a6-8d40-96523555ac5d",
+			"id": "3222b0ae-e826-44fb-9e2e-fbb9b2ad4b37",
 			"key": "baseUrl",
 			"value": "https://petstore.swagger.io/v2"
 		}
