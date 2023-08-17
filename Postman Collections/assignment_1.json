@@ -965,7 +965,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"name\": \"string\",\n  \"photoUrls\": [\n    \"{{photoUrls}}\"\n  ],\n  \"id\": {{id}},\n  \"category\": {\n    \"id\": {{categoryid}},\n    \"name\": \"{{categoryname}}\"\n  },\n  \"tags\": [\n    {\n      \"id\": {{tagsid}},\n      \"name\": \"{{tagsname}}\"\n    }\n  ],\n  \"status\": \"{{status}}\"\n}",
+							"raw": "{\n  \"name\": \"{{name}}\",\n  \"photoUrls\": [\n    \"{{photoUrls}}\"\n  ],\n  \"id\": {{id}},\n  \"category\": {\n    \"id\": {{categoryid}},\n    \"name\": \"{{categoryname}}\"\n  },\n  \"tags\": [\n    {\n      \"id\": {{tagsid}},\n      \"name\": \"{{tagsname}}\"\n    }\n  ],\n  \"status\": \"{{status}}\"\n}",
 							"options": {
 								"raw": {
 									"headerFamily": "json",
@@ -2410,7 +2410,7 @@
 	],
 	"variable": [
 		{
-			"id": "fe7dc7cf-ecd1-44d5-b43c-79c93e527b3a",
+			"id": "423fb586-d19a-4fe8-9a4f-81f887d2a4b3",
 			"key": "baseUrl",
 			"value": "https://petstore.swagger.io/v2"
 		}
