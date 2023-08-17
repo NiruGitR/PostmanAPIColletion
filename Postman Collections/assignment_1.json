@@ -907,6 +907,7 @@
 									"  if(this.item === undefined) {return}\r",
 									"\r",
 									"  pm.test(\"Verify pet\", function(){\r",
+									"\r",
 									"    const response = pm.response.json();\r",
 									"    pm.expect(response.json.name).to.eql(pm.iterationData.get(\"name\"));\r",
 									"\r",
@@ -917,7 +918,9 @@
 									"    pm.expect(response.json.id).to.eql(pm.iterationData.get(\"id\"));\r",
 									"\r",
 									"    pm.expect(response.json.category.id).to.eql(pm.iterationData.get(\"categoryid\"));\r",
+									"    console.log(category.id);\r",
 									"    pm.expect(response.json.category.name).to.eql(pm.iterationData.get(\"categoryname\"));\r",
+									"    console.log(category.name);\r",
 									"\r",
 									"    for (let tags of response.tags){\r",
 									"        pm.expect(response.tags.id).to.include(pm.iterationData.get(\"tagsid\"));\r",
@@ -2404,7 +2407,7 @@
 	],
 	"variable": [
 		{
-			"id": "5a0f4a5c-566a-4311-aac6-bc4f0a02132b",
+			"id": "91383a3c-b40c-4500-a539-b582c341fa7c",
 			"key": "baseUrl",
 			"value": "https://petstore.swagger.io/v2"
 		}
