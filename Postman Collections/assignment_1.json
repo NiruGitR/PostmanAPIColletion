@@ -960,7 +960,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"name\": \"{{name}}\",\n  \"photoUrls\": [\n    \"{{photoUrls}}\"\n  ],\n  \"id\": {{id}},\n  \"category\": {\n    \"id\": {{categoryid}},\n    \"name\": \"{{categoryname}}\"\n  },\n  \"tags\": [\n    {\n      \"id\": {{tagsid}},\n      \"name\": \"{{tagsname}}\"\n    }\n  ],\n  \"status\": \"{{status}}\"\n}",
+							"raw": "{\n  \"name\": \"{{name}}\",\n  \"photoUrls\": [\n    \"{{photoUrls}}\"\n  ],\n  \"id\": {{id}},\n  \"category\": {\n    \"id\":-86392345,\n    \"name\":\"reprehenderit incididunt Ut\"\n  },\n  \"tags\": [\n    {\n        \"id\":11986234,\n        \"name\":\"s\"\n    }\n  ],\n  \"status\": \"{{status}}\"\n}",
 							"options": {
 								"raw": {
 									"headerFamily": "json",
@@ -2405,7 +2405,7 @@
 	],
 	"variable": [
 		{
-			"id": "e5d9c66f-f384-477d-9252-fc2d5134fdf1",
+			"id": "a202b5bf-4267-4a9b-9daf-03e1a38a6694",
 			"key": "baseUrl",
 			"value": "https://petstore.swagger.io/v2"
 		}
