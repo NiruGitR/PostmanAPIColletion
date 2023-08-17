@@ -912,7 +912,7 @@
 									"    pm.expect(response.json.name).to.eql(pm.iterationData.get(\"name\"));\r",
 									"\r",
 									"    for (let photoUrls1 of response.photoUrls){\r",
-									"        pm.expect(response.photoUrls1).to.include(pm.iterationData.get(\"photoUrlsxx\"));\r",
+									"        pm.expect(response.photoUrls1).to.include(pm.iterationData.get(\"xxx\"));\r",
 									"    }\r",
 									"\r",
 									"    pm.expect(response.json.id).to.eql(pm.iterationData.get(\"id\"));\r",
@@ -2399,7 +2399,7 @@
 	],
 	"variable": [
 		{
-			"id": "d1b0c641-e3a3-4c14-af49-ee476969631f",
+			"id": "b60ca5fd-7786-483b-81be-92f7fe24c693",
 			"key": "baseUrl",
 			"value": "https://petstore.swagger.io/v2"
 		}
