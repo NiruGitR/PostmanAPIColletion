@@ -2421,9 +2421,19 @@
 	],
 	"variable": [
 		{
-			"id": "740f8df5-c00a-4fe1-81f7-59900baa09be",
+			"id": "39904698-657e-4301-b02b-13507968b574",
 			"key": "baseUrl",
 			"value": "https://petstore.swagger.io/v2"
+		},
+		{
+			"id": "42c6ae79-cd2e-41fe-bddf-e393d904caec",
+			"key": "id",
+			"value": ""
+		},
+		{
+			"id": "07747536-261e-4af2-8639-26a332c8e425",
+			"key": "name",
+			"value": ""
 		}
 	]
 }
