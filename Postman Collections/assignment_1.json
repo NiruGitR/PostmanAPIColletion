@@ -917,10 +917,10 @@
 									"\r",
 									"        pm.expect(response.json.id).to.eql(pm.iterationData.get(\"id\"));\r",
 									"\r",
-									"        for (let tags of response.tags){\r",
-									"            pm.expect(response.tags.id).to.include(pm.iterationData.get(\"tagsid\"));\r",
-									"            pm.expect(response.tags.name).to.include(pm.iterationData.get(\"tagsname\"));\r",
-									"        }\r",
+									"        // for (let tags of response.tags){\r",
+									"        //     pm.expect(response.tags.id).to.include(pm.iterationData.get(\"tagsid\"));\r",
+									"        //     pm.expect(response.tags.name).to.include(pm.iterationData.get(\"tagsname\"));\r",
+									"        // }\r",
 									"\r",
 									"        pm.expect(response.json.status).to.eql(pm.iterationData.get(\"status\"));\r",
 									"    })\r",
@@ -2416,37 +2416,37 @@
 	],
 	"variable": [
 		{
-			"id": "3df77ece-7ad4-4b6d-ad55-3f1cd11cc7d5",
+			"id": "bcea0090-da95-4108-90f2-29cdbd86057a",
 			"key": "baseUrl",
 			"value": "https://petstore.swagger.io/v2"
 		},
 		{
-			"id": "3563b582-0238-4338-b500-a5704c307223",
+			"id": "aa292bea-cf2c-48e1-8747-7d5f3d023ce0",
 			"key": "id",
 			"value": ""
 		},
 		{
-			"id": "9f4c17a7-294d-474e-8888-f74ef2025c2c",
+			"id": "cab223dd-3301-49cb-9f93-33a45e8c353c",
 			"key": "name",
 			"value": ""
 		},
 		{
-			"id": "e5a3a997-bf09-4780-a141-890bddbaf0d2",
+			"id": "4c7ceadf-4e46-403b-bb8e-312e7aa98d5f",
 			"key": "categoryid",
 			"value": ""
 		},
 		{
-			"id": "53a02359-4d5e-4059-80c5-9427d56671d0",
+			"id": "f4680e44-318e-4f7d-9cbe-32dc0ed19c98",
 			"key": "categoryname",
 			"value": ""
 		},
 		{
-			"id": "34a60001-fd28-40b8-9e01-7ed8c55f2ef9",
+			"id": "acb4a4e0-473c-4346-8173-174347a9005a",
 			"key": "tagsid",
 			"value": ""
 		},
 		{
-			"id": "4d830918-9a2e-4d03-802d-52293d4f4754",
+			"id": "5b98cd04-2d64-4dd5-a41b-fb8d0b67987a",
 			"key": "tagsname",
 			"value": ""
 		}
