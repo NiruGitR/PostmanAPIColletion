@@ -917,12 +917,16 @@
 									"\r",
 									"    pm.expect(response.json.id).to.eql(pm.iterationData.get(\"id\")); \r",
 									"\r",
-									"    for (let tags of response.tags){\r",
+									"//    for (let tags of response.tags){\r",
 									"        //pm.expect(response.tags.id).to.include(pm.iterationData.get(\"tagsid\"));\r",
 									"        //pm.expect(response.tags.name).to.include(pm.iterationData.get(\"tagsname\"));\r",
-									"        console.log(response.tags);\r",
-									"   }\r",
-									"    \r",
+									"        //console.log(response.tags);\r",
+									"//   }\r",
+									"\r",
+									"    let arrayObj = (response).tags;\r",
+									"    arrayObj.forEach((tag) => {\r",
+									"        pm.expect(tag.id).to.include()(data[\"tags\"]['id']);\r",
+									"    }\r",
 									"\r",
 									"    pm.expect(response.json.status).to.eql(pm.iterationData.get(\"status\"));\r",
 									"})\r",
@@ -2415,37 +2419,37 @@
 	],
 	"variable": [
 		{
-			"id": "a2f6eb22-ca20-4858-8fff-117a4e6f2470",
+			"id": "90634228-ea0c-4d8c-96bf-b3294f3f5894",
 			"key": "baseUrl",
 			"value": "https://petstore.swagger.io/v2"
 		},
 		{
-			"id": "dd8c2d1b-ee14-452e-bd25-56f36e6eb798",
+			"id": "93cfcc01-abe2-40db-b0ce-ae0b084300e1",
 			"key": "id",
 			"value": ""
 		},
 		{
-			"id": "b101681e-d66e-4af5-a99c-97d2cad9f5d7",
+			"id": "0142f3af-ae80-4c6f-9353-143b2b5b92de",
 			"key": "name",
 			"value": ""
 		},
 		{
-			"id": "0f17b133-7f09-469d-a5dd-0ac2881cc0a5",
+			"id": "d5c14175-fd0e-4dbf-8611-7adc030ab581",
 			"key": "categoryid",
 			"value": ""
 		},
 		{
-			"id": "6f68d792-5078-458b-9d2e-71a841e65fd6",
+			"id": "f97cb991-2393-43b8-9ea0-02216b8ad2f4",
 			"key": "categoryname",
 			"value": ""
 		},
 		{
-			"id": "8eee018c-f40d-4643-af59-60da8bd5a16d",
+			"id": "f713ded1-93d6-4e96-8b07-27aa47ccdac4",
 			"key": "tagsid",
 			"value": ""
 		},
 		{
-			"id": "098321cb-3e0c-4d5f-8aad-5247904837b1",
+			"id": "3b2b468d-d914-41a4-b3ad-b6de2760f2e2",
 			"key": "tagsname",
 			"value": ""
 		}
