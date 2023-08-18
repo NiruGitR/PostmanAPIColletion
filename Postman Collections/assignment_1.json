@@ -947,8 +947,8 @@
 							"script": {
 								"id": "af9adab7-61e1-442e-b9f5-40a5d7bb4732",
 								"exec": [
-									"pm.collectionVariables.set(\"id\", data[\"category\"]['id']);\r",
-									"pm.collectionVariables.set(\"name\", data[\"category\"]['name']);"
+									"pm.collectionVariables.set(\"categoryid\", data[\"category\"]['id']);\r",
+									"pm.collectionVariables.set(\"categoryname\", data[\"category\"]['name']);"
 								],
 								"type": "text/javascript"
 							}
@@ -2421,17 +2421,17 @@
 	],
 	"variable": [
 		{
-			"id": "39904698-657e-4301-b02b-13507968b574",
+			"id": "cd758ed9-52c7-4dc3-a3de-531653e42fe1",
 			"key": "baseUrl",
 			"value": "https://petstore.swagger.io/v2"
 		},
 		{
-			"id": "42c6ae79-cd2e-41fe-bddf-e393d904caec",
+			"id": "97cb01e2-2ae3-45d5-baa3-21444165d16c",
 			"key": "id",
 			"value": ""
 		},
 		{
-			"id": "07747536-261e-4af2-8639-26a332c8e425",
+			"id": "1eaf2ba7-94fe-4499-8b66-95e48691990e",
 			"key": "name",
 			"value": ""
 		}
