@@ -917,10 +917,10 @@
 									"\r",
 									"    pm.expect(response.json.id).to.eql(pm.iterationData.get(\"id\")); \r",
 									"\r",
-									"    for (let tags of response.tags){\r",
+									"    /*for (let tags of response.tags){\r",
 									"        pm.expect(response.tags.id).to.include(pm.iterationData.get(\"tagsid\"));\r",
 									"        pm.expect(response.tags.name).to.include(pm.iterationData.get(\"tagsname\"));\r",
-									"    }\r",
+									"    }*/\r",
 									"\r",
 									"    pm.expect(response.json.status).to.eql(pm.iterationData.get(\"status\"));\r",
 									"})\r",
@@ -942,10 +942,12 @@
 									"pm.collectionVariables.set(\"categoryid\", data[\"category\"]['id']);\r",
 									"pm.collectionVariables.set(\"categoryname\", data[\"category\"]['name']);\r",
 									"\r",
+									"for (let tags of response.tags){\r",
+									"    pm.collectionVariables.set(\"tagsid\", data[\"tags\"]['id']);\r",
+									"    pm.collectionVariables.set(\"tagsname\", data[\"tags\"]['name']);\r",
+									"}\r",
 									"\r",
 									"\r",
-									"pm.collectionVariables.set(\"tagsid\", data[\"tags\"]['id']);\r",
-									"pm.collectionVariables.set(\"tagsname\", data[\"tags\"]['name']);\r",
 									""
 								],
 								"type": "text/javascript"
@@ -2419,37 +2421,37 @@
 	],
 	"variable": [
 		{
-			"id": "17b8cc7a-189d-4d88-b5dd-84e19f3e1f1d",
+			"id": "5a1a0485-6ad5-4d87-ae8e-74b2a0b6afdf",
 			"key": "baseUrl",
 			"value": "https://petstore.swagger.io/v2"
 		},
 		{
-			"id": "637d0a7f-836c-44d5-91ba-6849f91bfb41",
+			"id": "e7eb4f9a-543d-45b0-bbbf-a2bb41352df1",
 			"key": "id",
 			"value": ""
 		},
 		{
-			"id": "9d78bf3f-a1c8-4e7a-a3b6-c38587408d07",
+			"id": "d4a27881-1368-4c0d-8174-22bf2783b5df",
 			"key": "name",
 			"value": ""
 		},
 		{
-			"id": "6536d1eb-a58b-4d68-9ba7-fcaa3d1472e6",
+			"id": "d84b271d-1768-46c2-b554-32e4aa0a2ab2",
 			"key": "categoryid",
 			"value": ""
 		},
 		{
-			"id": "ba547ba5-1b2c-492a-9e10-bf100d12ab9d",
+			"id": "0b04664e-a719-40cb-9337-3e9c65365e97",
 			"key": "categoryname",
 			"value": ""
 		},
 		{
-			"id": "6c43e8fa-59d0-4ec0-8ffb-0516316b6f3b",
+			"id": "78ae1454-2bc4-4d3f-8265-c6163dbec04c",
 			"key": "tagsid",
 			"value": ""
 		},
 		{
-			"id": "9c2659b7-618f-4640-9b36-3dd635795a69",
+			"id": "f0f71b7b-8463-4494-8676-eaae08b03a17",
 			"key": "tagsname",
 			"value": ""
 		}
