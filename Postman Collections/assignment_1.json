@@ -917,10 +917,10 @@
 									"\r",
 									"    pm.expect(response.json.id).to.eql(pm.iterationData.get(\"id\")); \r",
 									"\r",
-									"    /*for (let tags of response.tags){\r",
+									"    for (let tags of response.tags){\r",
 									"        pm.expect(response.tags.id).to.include(pm.iterationData.get(\"tagsid\"));\r",
 									"        pm.expect(response.tags.name).to.include(pm.iterationData.get(\"tagsname\"));\r",
-									"    }*/\r",
+									"    }\r",
 									"\r",
 									"    pm.expect(response.json.status).to.eql(pm.iterationData.get(\"status\"));\r",
 									"})\r",
@@ -941,11 +941,6 @@
 								"exec": [
 									"pm.collectionVariables.set(\"categoryid\", data[\"category\"]['id']);\r",
 									"pm.collectionVariables.set(\"categoryname\", data[\"category\"]['name']);\r",
-									"\r",
-									"for (let tags of response.tags){\r",
-									"    pm.collectionVariables.set(\"tagsid\", data[\"tags\"]['id']);\r",
-									"    pm.collectionVariables.set(\"tagsname\", data[\"tags\"]['name']);\r",
-									"}\r",
 									"\r",
 									"\r",
 									""
@@ -2421,37 +2416,37 @@
 	],
 	"variable": [
 		{
-			"id": "3bdd0d0b-5013-41e6-9312-c752aec41230",
+			"id": "90a1041a-eb89-4072-a77e-fbc9cd076660",
 			"key": "baseUrl",
 			"value": "https://petstore.swagger.io/v2"
 		},
 		{
-			"id": "edccc42a-2730-4f53-a3c8-81b39198aca7",
+			"id": "9632fba2-5a43-4979-b243-e34bb0dbd0b1",
 			"key": "id",
 			"value": ""
 		},
 		{
-			"id": "7bd6dea4-f46a-434e-803f-5a1701fec186",
+			"id": "94a9470f-b9e4-4944-af44-56e3197c1470",
 			"key": "name",
 			"value": ""
 		},
 		{
-			"id": "b76e9e5d-69b6-4fa3-99aa-f3cee75ef5d1",
+			"id": "68e21247-78c0-4b6e-9d1e-60711716fb7c",
 			"key": "categoryid",
 			"value": ""
 		},
 		{
-			"id": "1cd27839-8b6a-4b70-8c93-13550793b471",
+			"id": "9ba477dc-7a24-468e-9367-f0e280f5ea76",
 			"key": "categoryname",
 			"value": ""
 		},
 		{
-			"id": "8202d4bd-8efe-431c-a3d5-bacc2f0c9ec8",
+			"id": "c3a6b611-9bba-40bf-a819-6611b2f01cff",
 			"key": "tagsid",
 			"value": ""
 		},
 		{
-			"id": "6353e1a5-093c-4c30-ab37-13db6db93a12",
+			"id": "344cb255-e13c-4a9a-86d2-1d91fd3679f3",
 			"key": "tagsname",
 			"value": ""
 		}
