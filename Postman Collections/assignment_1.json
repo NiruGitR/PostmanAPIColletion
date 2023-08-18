@@ -2422,37 +2422,37 @@
 	],
 	"variable": [
 		{
-			"id": "ab3090e8-cbbd-45a9-8720-7de1b1ed61f3",
+			"id": "ef2aa4b6-3bd4-4116-9aad-137fea2daa45",
 			"key": "baseUrl",
 			"value": "https://petstore.swagger.io/v2"
 		},
 		{
-			"id": "9c7845cf-ae5c-4a7c-8c9e-038ef2a9426d",
+			"id": "75b2f586-ade4-435a-a4f5-93298627c17f",
 			"key": "id",
 			"value": ""
 		},
 		{
-			"id": "a64f4f5b-8f9b-4fa5-8aab-51263db58a9c",
+			"id": "9c8244ce-c24e-40d5-bb38-8843f6dc20d9",
 			"key": "name",
 			"value": ""
 		},
 		{
-			"id": "4d69366c-59af-4087-9dc4-3ebd29b9379a",
+			"id": "7cf2aad9-7686-4281-807d-c3ef46d64478",
 			"key": "categoryid",
 			"value": ""
 		},
 		{
-			"id": "cb5270a4-2aa3-4c6e-bcdd-8e31593f2c01",
+			"id": "344926b4-cbe6-4109-b653-f24bed6279c3",
 			"key": "categoryname",
 			"value": ""
 		},
 		{
-			"id": "e85d07f9-7bdc-413c-a07f-99f6eeb89f15",
+			"id": "e1e9adeb-9493-495c-9511-4b417f19337c",
 			"key": "tagsid",
 			"value": ""
 		},
 		{
-			"id": "a1d93a40-e395-43f1-b31c-0537ca572351",
+			"id": "da38b0ac-fe01-46f3-89d0-777de7219d01",
 			"key": "tagsname",
 			"value": ""
 		}
