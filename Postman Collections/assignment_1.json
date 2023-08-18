@@ -917,8 +917,11 @@
 									"\r",
 									"    pm.expect(response.json.id).to.eql(pm.iterationData.get(\"id\"));\r",
 									"\r",
-									"    pm.expect(response.json.category.id).to.eql(pm.iterationData.get(\"category.id\"));\r",
-									"    pm.expect(response.json.category.name).to.eql(pm.iterationData.get(\"category.name\"));\r",
+									"    pm.expect(response.json.category.id).to.eql(pm.iterationData.get(\"category\").get(\"id\"));\r",
+									"    pm.expect(response.json.category.name).to.eql(pm.iterationData.get(\"category\").get(\"name\"));\r",
+									"\r",
+									"    /*pm.expect(response.json.category.id).to.eql(pm.iterationData.get(\"category.id\"));\r",
+									"    pm.expect(response.json.category.name).to.eql(pm.iterationData.get(\"category.name\")); */\r",
 									"\r",
 									"    for (let tags of response.tags){\r",
 									"        pm.expect(response.tags.id).to.include(pm.iterationData.get(\"tagsid\"));\r",
@@ -2405,7 +2408,7 @@
 	],
 	"variable": [
 		{
-			"id": "54cc8927-f87c-4ce1-8e49-91a51a14c0ca",
+			"id": "bc3b34b9-c3e5-409f-bc2e-f74cc9a31dc7",
 			"key": "baseUrl",
 			"value": "https://petstore.swagger.io/v2"
 		}
