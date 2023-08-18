@@ -917,19 +917,18 @@
 									"\r",
 									"        pm.expect(response.json.id).to.eql(pm.iterationData.get(\"id\"));\r",
 									"\r",
-									"        //    for (let tags of response.tags){\r",
-									"        //pm.expect(response.tags.id).to.include(pm.iterationData.get(\"tagsid\"));\r",
-									"        //pm.expect(response.tags.name).to.include(pm.iterationData.get(\"tagsname\"));\r",
-									"        //console.log(response.tags);\r",
-									"        //   }\r",
-									"\r",
-									"        let arrayObj = (response).tags;\r",
-									"        arrayObj.forEach((tag) => {\r",
-									"            //pm.expect(response.tags.id).to.include(pm.iterationData.get(\"tagsid\"));\r",
-									"            //pm.expect(response.tag.id).to.include(data[\"tags\"][\"id\"]);\r",
+									"        for (let tags of response.tags){\r",
 									"            pm.expect(response.tags.id).to.include(pm.iterationData.get(\"tagsid\"));\r",
 									"            pm.expect(response.tags.name).to.include(pm.iterationData.get(\"tagsname\"));\r",
-									"        });\r",
+									"        }\r",
+									"\r",
+									"        // let arrayObj = (response).tags;\r",
+									"        // arrayObj.forEach((tag) => {\r",
+									"        //     //pm.expect(response.tags.id).to.include(pm.iterationData.get(\"tagsid\"));\r",
+									"        //     //pm.expect(response.tag.id).to.include(data[\"tags\"][\"id\"]);\r",
+									"        //     pm.expect(response.tags.id).to.include(pm.iterationData.get(\"tagsid\"));\r",
+									"        //     pm.expect(response.tags.name).to.include(pm.iterationData.get(\"tagsname\"));\r",
+									"        // });\r",
 									"\r",
 									"        pm.expect(response.json.status).to.eql(pm.iterationData.get(\"status\"));\r",
 									"    })\r",
@@ -2422,37 +2421,37 @@
 	],
 	"variable": [
 		{
-			"id": "ef2aa4b6-3bd4-4116-9aad-137fea2daa45",
+			"id": "89880cfa-dfef-45af-b7c2-a6d334216e0a",
 			"key": "baseUrl",
 			"value": "https://petstore.swagger.io/v2"
 		},
 		{
-			"id": "75b2f586-ade4-435a-a4f5-93298627c17f",
+			"id": "766302d2-5122-411d-8633-5cefbf443c10",
 			"key": "id",
 			"value": ""
 		},
 		{
-			"id": "9c8244ce-c24e-40d5-bb38-8843f6dc20d9",
+			"id": "f60229e2-ca14-4405-932f-5a1f2d37a672",
 			"key": "name",
 			"value": ""
 		},
 		{
-			"id": "7cf2aad9-7686-4281-807d-c3ef46d64478",
+			"id": "ad173610-9433-465b-8a8c-0d9ecd46f58a",
 			"key": "categoryid",
 			"value": ""
 		},
 		{
-			"id": "344926b4-cbe6-4109-b653-f24bed6279c3",
+			"id": "78239297-298a-49a2-b47e-6a4147d68db0",
 			"key": "categoryname",
 			"value": ""
 		},
 		{
-			"id": "e1e9adeb-9493-495c-9511-4b417f19337c",
+			"id": "92a7e878-9ff7-4127-8bf6-741968abfbcb",
 			"key": "tagsid",
 			"value": ""
 		},
 		{
-			"id": "da38b0ac-fe01-46f3-89d0-777de7219d01",
+			"id": "2e4e7c18-8b2e-4bc8-905f-e7833ef45ed2",
 			"key": "tagsname",
 			"value": ""
 		}
