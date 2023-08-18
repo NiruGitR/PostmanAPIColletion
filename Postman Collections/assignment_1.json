@@ -904,33 +904,35 @@
 								"id": "0cec5b35-dc56-4965-aabe-581442a37abd",
 								"exec": [
 									"itemToForm = () => {\r",
-									"  if(this.item === undefined) {return}\r",
+									"    if (this.item === undefined) { return }\r",
 									"\r",
-									"  pm.test(\"Verify pet\", function(){\r",
+									"    pm.test(\"Verify pet\", function () {\r",
 									"\r",
-									"    const response = pm.response.json();\r",
-									"    pm.expect(response.json.name).to.eql(pm.iterationData.get(\"name\"));\r",
+									"        const response = pm.response.json();\r",
+									"        pm.expect(response.json.name).to.eql(pm.iterationData.get(\"name\"));\r",
 									"\r",
-									"    for (let photoUrls of response.photoUrls){\r",
-									"        pm.expect(response.photoUrls).to.include(pm.iterationData.get(\"photoUrls\"));\r",
-									"    }\r",
+									"        for (let photoUrls of response.photoUrls) {\r",
+									"            pm.expect(response.photoUrls).to.include(pm.iterationData.get(\"photoUrls\"));\r",
+									"        }\r",
 									"\r",
-									"    pm.expect(response.json.id).to.eql(pm.iterationData.get(\"id\")); \r",
+									"        pm.expect(response.json.id).to.eql(pm.iterationData.get(\"id\"));\r",
 									"\r",
-									"//    for (let tags of response.tags){\r",
+									"        //    for (let tags of response.tags){\r",
 									"        //pm.expect(response.tags.id).to.include(pm.iterationData.get(\"tagsid\"));\r",
 									"        //pm.expect(response.tags.name).to.include(pm.iterationData.get(\"tagsname\"));\r",
 									"        //console.log(response.tags);\r",
-									"//   }\r",
+									"        //   }\r",
 									"\r",
-									"    let arrayObj = (response).tags;\r",
-									"    arrayObj.forEach((tag) => {\r",
-									"        //pm.expect(response.tags.id).to.include(pm.iterationData.get(\"tagsid\"));\r",
-									"        pm.expect(response.tag.id).to.include(data[\"tags\"][\"id\"]);\r",
-									"    });\r",
+									"        let arrayObj = (response).tags;\r",
+									"        arrayObj.forEach((tag) => {\r",
+									"            //pm.expect(response.tags.id).to.include(pm.iterationData.get(\"tagsid\"));\r",
+									"            //pm.expect(response.tag.id).to.include(data[\"tags\"][\"id\"]);\r",
+									"            pm.expect(response.tags.id).to.include(pm.iterationData.get(\"tagsid\"));\r",
+									"            pm.expect(response.tags.name).to.include(pm.iterationData.get(\"tagsname\"));\r",
+									"        });\r",
 									"\r",
-									"    pm.expect(response.json.status).to.eql(pm.iterationData.get(\"status\"));\r",
-									"})\r",
+									"        pm.expect(response.json.status).to.eql(pm.iterationData.get(\"status\"));\r",
+									"    })\r",
 									"\r",
 									"}\r",
 									"\r",
@@ -2420,37 +2422,37 @@
 	],
 	"variable": [
 		{
-			"id": "d9c8e04c-c336-4169-b6b5-01c3bcbfa1e1",
+			"id": "ab3090e8-cbbd-45a9-8720-7de1b1ed61f3",
 			"key": "baseUrl",
 			"value": "https://petstore.swagger.io/v2"
 		},
 		{
-			"id": "955f1f43-d9ec-4240-8bdf-687afcabe34b",
+			"id": "9c7845cf-ae5c-4a7c-8c9e-038ef2a9426d",
 			"key": "id",
 			"value": ""
 		},
 		{
-			"id": "3a8517ec-41f5-4bf4-87fa-9a589e50039e",
+			"id": "a64f4f5b-8f9b-4fa5-8aab-51263db58a9c",
 			"key": "name",
 			"value": ""
 		},
 		{
-			"id": "baa6e4a6-4449-4139-8e87-2055fbeac616",
+			"id": "4d69366c-59af-4087-9dc4-3ebd29b9379a",
 			"key": "categoryid",
 			"value": ""
 		},
 		{
-			"id": "107a8320-4678-468e-a603-099f656e6799",
+			"id": "cb5270a4-2aa3-4c6e-bcdd-8e31593f2c01",
 			"key": "categoryname",
 			"value": ""
 		},
 		{
-			"id": "d3dfdcfb-c30d-42d2-a473-85295da18adc",
+			"id": "e85d07f9-7bdc-413c-a07f-99f6eeb89f15",
 			"key": "tagsid",
 			"value": ""
 		},
 		{
-			"id": "c89efc01-d9a2-4b8b-9776-500b28188a59",
+			"id": "a1d93a40-e395-43f1-b31c-0537ca572351",
 			"key": "tagsname",
 			"value": ""
 		}
