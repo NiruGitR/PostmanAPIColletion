@@ -925,7 +925,8 @@
 									"\r",
 									"    let arrayObj = (response).tags;\r",
 									"    arrayObj.forEach((tag) => {\r",
-									"        pm.expect(response.tags.id).to.include(pm.iterationData.get(\"tagsid\"));\r",
+									"        //pm.expect(response.tags.id).to.include(pm.iterationData.get(\"tagsid\"));\r",
+									"        pm.expect(response.tag.id).to.include(data[\"tags\"][\"id\"]);\r",
 									"    });\r",
 									"\r",
 									"    pm.expect(response.json.status).to.eql(pm.iterationData.get(\"status\"));\r",
@@ -2419,37 +2420,37 @@
 	],
 	"variable": [
 		{
-			"id": "c24056fd-92cb-44e7-be47-921c4877bd5a",
+			"id": "14f9e760-40cf-4331-a3fb-db34a672e63f",
 			"key": "baseUrl",
 			"value": "https://petstore.swagger.io/v2"
 		},
 		{
-			"id": "ef888b19-5d94-479f-86c6-9ef53a562521",
+			"id": "9a9ed051-bd62-4b42-a3c5-a02a3542f0b7",
 			"key": "id",
 			"value": ""
 		},
 		{
-			"id": "9072899e-d94d-4756-86a3-940ff1826a1a",
+			"id": "6cee9265-ede9-4249-b8a6-3121e003424f",
 			"key": "name",
 			"value": ""
 		},
 		{
-			"id": "c96c5a42-d8c6-4587-bb03-2ea251985223",
+			"id": "1fcb368f-7949-4b82-929d-aafc2e0a842a",
 			"key": "categoryid",
 			"value": ""
 		},
 		{
-			"id": "83a1fd8b-ec61-4f0c-a889-b17273496f61",
+			"id": "7bee328f-1c62-4a01-bc49-c22525f4a78a",
 			"key": "categoryname",
 			"value": ""
 		},
 		{
-			"id": "2eae3665-4eb9-4d1a-939f-3d763b8daa40",
+			"id": "66a89fd2-335a-4efc-b92f-19f8d4a0f5b3",
 			"key": "tagsid",
 			"value": ""
 		},
 		{
-			"id": "6563f6a3-1f73-4856-8cf6-6acceca948df",
+			"id": "ded98137-e059-4aaa-961b-3fef112c9596",
 			"key": "tagsname",
 			"value": ""
 		}
