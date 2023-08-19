@@ -934,14 +934,16 @@
 							"script": {
 								"id": "af9adab7-61e1-442e-b9f5-40a5d7bb4732",
 								"exec": [
+									"const response = pm.response.json();\r",
+									"\r",
 									"pm.collectionVariables.set(\"categoryid\", data[\"category\"]['id']);\r",
 									"pm.collectionVariables.set(\"categoryname\", data[\"category\"]['name']);\r",
 									" \r",
-									"for (var i=0; i < 2; i++)\r",
+									"for (var i=0; i < pm.expect(response.json.name).to.eql(pm.iterationData.get(\"tags\")).length; i++)\r",
 									" {\r",
 									"    pm.collectionVariables.set(\"tagsid\", data[\"tags\"][i]['id']);\r",
 									"    pm.collectionVariables.set(\"tagsname\", data[\"tags\"][i]['name']);\r",
-									"    console.log(\"-------->\"+responseJson.columns[i]);\r",
+									"    //console.log(\"-------->\"+responseJson.columns[i]);\r",
 									"}\r",
 									"\r",
 									"//pm.collectionVariables.set(\"tagsid\", data[\"tags\"]['id']);\r",
@@ -2425,37 +2427,37 @@
 	],
 	"variable": [
 		{
-			"id": "08d8a465-de7b-4f23-b589-944ed93c4741",
+			"id": "07654931-e0d3-427c-943e-fe10f79148f6",
 			"key": "baseUrl",
 			"value": "https://petstore.swagger.io/v2"
 		},
 		{
-			"id": "dd39d1f5-9c07-48bb-a5c4-efbbe4ef3b8c",
+			"id": "8ac1e481-3f98-4ee7-9748-7b4d69064917",
 			"key": "id",
 			"value": ""
 		},
 		{
-			"id": "2c472dca-cb2c-4e18-a49d-f523bde19ae7",
+			"id": "b95b788f-5706-425b-adf7-dc7dc12908cb",
 			"key": "name",
 			"value": ""
 		},
 		{
-			"id": "42577ba2-3b9a-4fef-987e-b47103b547a7",
+			"id": "90ba71ca-4147-4de9-ae86-531ae6f35560",
 			"key": "categoryid",
 			"value": ""
 		},
 		{
-			"id": "4c3553d9-ffa6-4640-8c2f-b77d97e2efeb",
+			"id": "7475e90e-62f1-434a-9d0e-e1515047755c",
 			"key": "categoryname",
 			"value": ""
 		},
 		{
-			"id": "47cbc86b-49ea-4c31-8a70-677d90542fcc",
+			"id": "f6e15aa5-5a5e-4d8b-85e9-ddff092a1cdd",
 			"key": "tagsid",
 			"value": ""
 		},
 		{
-			"id": "20965a43-18b4-4b10-a9e9-45edc13071f0",
+			"id": "09d95b2b-8813-49d3-89bd-0c25da33b76a",
 			"key": "tagsname",
 			"value": ""
 		}
