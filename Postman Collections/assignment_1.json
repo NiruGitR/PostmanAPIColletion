@@ -937,24 +937,21 @@
 									"pm.collectionVariables.set(\"categoryid\", data[\"category\"]['id']);\r",
 									"pm.collectionVariables.set(\"categoryname\", data[\"category\"]['name']);\r",
 									"\r",
-									"for (let tgsL of response.tags){\r",
-									"    pm.collectionVariables.set(\"tagsid\", data[\"tags\"][tgsL]['id']);\r",
-									"    pm.collectionVariables.set(\"tagsname\", data[\"tags\"][tgsL]['name']);\r",
-									"}\r",
 									"\r",
 									"/*\r",
 									"pm.collectionVariables.set(\"tagsid\", data[\"tags\"][0]['id']);\r",
 									"pm.collectionVariables.set(\"tagsname\", data[\"tags\"][0]['name']);\r",
 									"pm.collectionVariables.set(\"tagsid\", data[\"tags\"][1]['id']);\r",
 									"pm.collectionVariables.set(\"tagsname\", data[\"tags\"][1]['name']);\r",
+									"*/\r",
 									"\r",
-									"for (var i=0; i<2; i++)\r",
+									"for (var i=0; i<tags.length; i++)\r",
 									" {\r",
 									"    pm.collectionVariables.set(\"tagsid\", data[\"tags\"][i]['id']);\r",
 									"    pm.collectionVariables.set(\"tagsname\", data[\"tags\"][i]['name']);\r",
 									"    console.log(\"-------->\"+i);\r",
 									"}\r",
-									"*/\r",
+									"\r",
 									"//pm.collectionVariables.set(\"tagsid\", data[\"tags\"]['id']);\r",
 									"//pm.collectionVariables.set(\"tagsname\", data[\"tags\"]['name']);\r",
 									"\r",
@@ -2436,37 +2433,37 @@
 	],
 	"variable": [
 		{
-			"id": "ab6dc05c-ef59-4d1e-a338-ad9936169a2d",
+			"id": "393fe734-c62b-4f6a-a7c7-ebfbdae44c70",
 			"key": "baseUrl",
 			"value": "https://petstore.swagger.io/v2"
 		},
 		{
-			"id": "df14f0a0-6796-4307-ba94-fc7d3643cf51",
+			"id": "e1e0bb3c-1231-4b30-bf30-806ce188d0a9",
 			"key": "id",
 			"value": ""
 		},
 		{
-			"id": "d19783ab-84de-4aa9-9741-8b32e8a1f893",
+			"id": "ecf86e7a-3238-4ee5-8f8d-9540b3a583fc",
 			"key": "name",
 			"value": ""
 		},
 		{
-			"id": "11ab0fca-93fd-42ee-bcdc-301ba8ca0a80",
+			"id": "374d8b88-b693-4a9f-b47e-92afce643b75",
 			"key": "categoryid",
 			"value": ""
 		},
 		{
-			"id": "d430d797-e51d-49ea-a60d-f63b1fd8fbc1",
+			"id": "98ead616-d1cf-48ce-b94c-feb2a142f84f",
 			"key": "categoryname",
 			"value": ""
 		},
 		{
-			"id": "5c3ddec3-d0c4-410c-89e1-e8f3ed4272ea",
+			"id": "5728a917-042f-4f34-8fd4-14162641fbd3",
 			"key": "tagsid",
 			"value": ""
 		},
 		{
-			"id": "a14f0240-a544-415f-84ae-17225240f3e7",
+			"id": "5887acce-c784-4077-b978-c679bd3947f7",
 			"key": "tagsname",
 			"value": ""
 		}
