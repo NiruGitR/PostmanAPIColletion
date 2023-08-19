@@ -941,21 +941,8 @@
 									" {\r",
 									"    pm.collectionVariables.set(\"tagsid\", data[\"tags\"][i]['id']);\r",
 									"    pm.collectionVariables.set(\"tagsname\", data[\"tags\"][i]['name']);\r",
-									"    //console.log(\"-------->\"+responseJson.columns[i]);\r",
 									"}\r",
-									"pm.collectionVariables.set(\"tagsid\", data[\"tags\"][0]['id']);\r",
-									"    pm.collectionVariables.set(\"tagsname\", data[\"tags\"][0]['name']);\r",
-									"    pm.collectionVariables.set(\"tagsid\", data[\"tags\"][1]['id']);\r",
-									"    pm.collectionVariables.set(\"tagsname\", data[\"tags\"][1]['name']);\r",
-									"//pm.collectionVariables.set(\"tagsid\", data[\"tags\"]['id']);\r",
-									"//pm.collectionVariables.set(\"tagsname\", data[\"tags\"]['name']);\r",
-									"\r",
-									"// var tgs = response.json.tags;\r",
-									"// for (var i=0; i<tgs.length; i++)\r",
-									"// {\r",
-									"//     pm.collectionVariables.set(\"tagsid\", tgs[i]['id']);\r",
-									"//     pm.collectionVariables.set(\"tagsname\", tgs[i]['idname']);\r",
-									"// }"
+									""
 								],
 								"type": "text/javascript"
 							}
@@ -2428,37 +2415,37 @@
 	],
 	"variable": [
 		{
-			"id": "a83113a8-6d3f-47c4-b602-289d68761cf3",
+			"id": "ea13769c-56e1-4d92-9478-481f68d2fcbd",
 			"key": "baseUrl",
 			"value": "https://petstore.swagger.io/v2"
 		},
 		{
-			"id": "a213e7e3-4b07-4c11-ac9b-acaa6ff5dfbc",
+			"id": "e37d64b2-94b4-4a06-953c-3a8eac1bd0d6",
 			"key": "id",
 			"value": ""
 		},
 		{
-			"id": "53d5586f-5c9a-4502-b014-dfd7c643534e",
+			"id": "d560fbc0-dae8-429b-9743-e3fce8091665",
 			"key": "name",
 			"value": ""
 		},
 		{
-			"id": "c0174c7c-92af-4544-8966-76f2737a4d24",
+			"id": "8b470091-3626-4cd2-9d87-5952955c3a1e",
 			"key": "categoryid",
 			"value": ""
 		},
 		{
-			"id": "60b4dc5a-44d3-407a-ad45-c34f7bc7d016",
+			"id": "a9cc4cf6-d7cd-4f16-9f05-734a9e0b5b75",
 			"key": "categoryname",
 			"value": ""
 		},
 		{
-			"id": "7e52c6f3-801f-46da-b606-1ee1bcfc6081",
+			"id": "0e45d7a4-990a-4366-b427-291a1b1734f9",
 			"key": "tagsid",
 			"value": ""
 		},
 		{
-			"id": "1621a0f5-b616-4d6d-8269-e4b31465d344",
+			"id": "864acce4-79bf-4d88-8331-232ad3898b2d",
 			"key": "tagsname",
 			"value": ""
 		}
