@@ -937,12 +937,18 @@
 									"pm.collectionVariables.set(\"categoryid\", data[\"category\"]['id']);\r",
 									"pm.collectionVariables.set(\"categoryname\", data[\"category\"]['name']);\r",
 									"\r",
+									"for (let tgsL of response.tags){\r",
+									"    pm.collectionVariables.set(\"tagsid\", data[\"tags\"][tgsL]['id']);\r",
+									"    pm.collectionVariables.set(\"tagsname\", data[\"tags\"][tgsL]['name']);\r",
+									"}\r",
+									"\r",
+									"/*\r",
 									"pm.collectionVariables.set(\"tagsid\", data[\"tags\"][0]['id']);\r",
 									"pm.collectionVariables.set(\"tagsname\", data[\"tags\"][0]['name']);\r",
 									"pm.collectionVariables.set(\"tagsid\", data[\"tags\"][1]['id']);\r",
 									"pm.collectionVariables.set(\"tagsname\", data[\"tags\"][1]['name']);\r",
 									"\r",
-									"/*for (var i=0; i<2; i++)\r",
+									"for (var i=0; i<2; i++)\r",
 									" {\r",
 									"    pm.collectionVariables.set(\"tagsid\", data[\"tags\"][i]['id']);\r",
 									"    pm.collectionVariables.set(\"tagsname\", data[\"tags\"][i]['name']);\r",
@@ -2430,37 +2436,37 @@
 	],
 	"variable": [
 		{
-			"id": "5f373808-456d-47e7-a4a8-77ed899ea0d4",
+			"id": "6393ba28-c5d6-45cd-8081-cbc211116061",
 			"key": "baseUrl",
 			"value": "https://petstore.swagger.io/v2"
 		},
 		{
-			"id": "f8f89592-5793-4783-9486-a701b72c0267",
+			"id": "4eb6f4c8-99be-401d-a85a-84feee6aa31a",
 			"key": "id",
 			"value": ""
 		},
 		{
-			"id": "b3fbffae-4dd4-4560-a889-f7e0c7bfbeec",
+			"id": "8a717647-d103-4d9b-9ba5-527ef6e41ccc",
 			"key": "name",
 			"value": ""
 		},
 		{
-			"id": "668db54b-e241-49ec-bd42-93f5af0b4624",
+			"id": "f32dd687-b920-4d20-8603-b2445d53bfb7",
 			"key": "categoryid",
 			"value": ""
 		},
 		{
-			"id": "f5d4411a-d460-4b5b-a6c9-95807c59b998",
+			"id": "115229ea-ea1d-4fc5-b0d9-94284c6e83a0",
 			"key": "categoryname",
 			"value": ""
 		},
 		{
-			"id": "105895ee-4075-4256-a2c2-641243efa2ee",
+			"id": "4e2e4983-b6d9-43bf-9de0-08588c9067ba",
 			"key": "tagsid",
 			"value": ""
 		},
 		{
-			"id": "eff20264-5dd3-4a41-85d6-4a4f0e99ed98",
+			"id": "765d0878-2869-4355-801d-fcccc95de53f",
 			"key": "tagsname",
 			"value": ""
 		}
